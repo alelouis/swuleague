@@ -7,5 +7,8 @@ dependencies = [
     "Pillow>=10.0",
 ]
 
+[tool.setuptools]
+py-modules = ["image", "data", "drawing", "theme"]
+
 [project.scripts]
 swuleague = "image:main"
