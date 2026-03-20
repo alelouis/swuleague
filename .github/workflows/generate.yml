@@ -27,22 +27,30 @@ jobs:
       - name: Generate images
         run: python image.py
 
+      - name: Prepare release assets
+        run: |
+          mkdir -p release_assets
+          for f in $(find output -name '*.png' -o -name '*.webp' | sort); do
+            # output/shop/etape_01.png -> shop_etape_01.png
+            shop=$(echo "$f" | cut -d/ -f2)
+            base=$(basename "$f")
+            cp "$f" "release_assets/${shop}_${base}"
+          done
+
       - name: Create release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="images-$(date -u +%Y%m%d-%H%M%S)"
-          # Collect all generated images
-          FILES=$(find output -name '*.png' -o -name '*.webp' | sort)
+          FILES=$(ls release_assets/*)
           if [ -z "$FILES" ]; then
             echo "No images generated, skipping release."
             exit 0
           fi
-          # Build release notes from generated files
           BODY="Generated from data/ on $(date -u +%Y-%m-%d)."$'\n\n'
           BODY+="**Files:**"$'\n'
           for f in $FILES; do
-            BODY+="- \`$f\`"$'\n'
+            BODY+="- \`$(basename $f)\`"$'\n'
           done
           gh release create "$TAG" \
             --title "Images $(date -u +%Y-%m-%d)" \
