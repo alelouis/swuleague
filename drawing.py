@@ -4,7 +4,8 @@ drawing.py — Rendu PIL (draw_panel, draw_bareme, text helpers, composition ima
 
 import hashlib
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -479,8 +480,7 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
     draw.text(((img_width - sw) / 2, PADDING_Y + 4 * SCALE), header_label, fill=ACCENT_TITLE, font=font_shop)
 
     # Date de génération (heure de Paris) en haut à droite
-    paris_tz = timezone(timedelta(hours=2))
-    now = datetime.now(paris_tz)
+    now = datetime.now(ZoneInfo("Europe/Paris"))
     date_str = f"Généré le {now.strftime('%d/%m/%Y %H:%M')}"
     dw = text_width(date_str, font_footer)
     draw.text((img_width - dw - PADDING_X, PADDING_Y + 4 * SCALE), date_str, fill=TEXT_DIM, font=font_footer)
