@@ -8,12 +8,16 @@ from typing import NamedTuple
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
+SETS = {
+    "set-7": "Set 7",
+}
+CURRENT_SET = "set-7"
+
 SHOPS = {
     "all4play":      "All4Play",
     "cercle-du-jeu": "Le Cercle du Jeu",
     "test":          "Boutique Test",
 }
-DEFAULT_SHOP = "all4play"
 
 NUM_STEPS = 10
 CSV_FIELDS = ["joueur", "victoires", "defaites", "recrutement"]
@@ -50,14 +54,14 @@ class StepResult(NamedTuple):
 
 # ── CSV I/O ───────────────────────────────────────────────────────────────────
 
-def data_dir(shop: str) -> Path:
-    return Path("data") / shop
+def data_dir(set_id: str, shop: str) -> Path:
+    return Path("data") / set_id / shop
 
-def csv_path(step: int, shop: str) -> Path:
-    return data_dir(shop) / f"etape_{step:02d}.csv"
+def csv_path(set_id: str, step: int, shop: str) -> Path:
+    return data_dir(set_id, shop) / f"etape_{step:02d}.csv"
 
-def load_step(step: int, shop: str) -> list[StepResult]:
-    path = csv_path(step, shop)
+def load_step(set_id: str, step: int, shop: str) -> list[StepResult]:
+    path = csv_path(set_id, step, shop)
     if not path.exists():
         return []
     results = []
@@ -74,21 +78,21 @@ def load_step(step: int, shop: str) -> list[StepResult]:
             ))
     return results
 
-def available_steps(shop: str) -> list[int]:
-    d = data_dir(shop)
+def available_steps(set_id: str, shop: str) -> list[int]:
+    d = data_dir(set_id, shop)
     if not d.exists():
         return []
     return [i for i in range(1, NUM_STEPS + 1)
-            if csv_path(i, shop).exists() and load_step(i, shop)]
+            if csv_path(set_id, i, shop).exists() and load_step(set_id, i, shop)]
 
 # ── Ranking ───────────────────────────────────────────────────────────────────
 
-def build_ranking_up_to(shop: str, up_to_step: int) -> tuple[list[int], list[dict]]:
+def build_ranking_up_to(set_id: str, shop: str, up_to_step: int) -> tuple[list[int], list[dict]]:
     """Construit le classement en ne prenant en compte que les étapes <= up_to_step."""
-    steps_used = [s for s in available_steps(shop) if s <= up_to_step]
+    steps_used = [s for s in available_steps(set_id, shop) if s <= up_to_step]
     players: dict[str, dict] = {}
     for step in steps_used:
-        for r in load_step(step, shop):
+        for r in load_step(set_id, step, shop):
             p = players.setdefault(r.joueur, {
                 "joueur": r.joueur, "total": 0, "etapes": 0,
                 "victoires": 0, "parties": 0, "recrutement": 0,

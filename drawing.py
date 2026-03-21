@@ -4,13 +4,14 @@ drawing.py — Rendu PIL (draw_panel, draw_bareme, text helpers, composition ima
 
 import hashlib
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
 from data import (
     available_steps, build_ranking_up_to, load_step,
-    NUM_STEPS, SHOPS,
+    NUM_STEPS, SETS, SHOPS,
     PTS_PARTICIPATION, PTS_VICTOIRE, PTS_VICTOIRE_MAX,
     PTS_PARTIE, PTS_PARTIE_MAX, PTS_RECRUTEMENT,
 )
@@ -375,8 +376,8 @@ def _ranking_table_data(steps, ranking, shop_name: str, prev_ranking: list[dict]
 
 # ── Table data: step ──────────────────────────────────────────────────────────
 
-def _step_table_data(step: int, shop: str):
-    results = load_step(step, shop)
+def _step_table_data(set_id: str, step: int, shop: str):
+    results = load_step(set_id, step, shop)
     if not results:
         return None
     results = sorted(results, key=lambda r: (-r.total, -r.victoires, r.joueur))
@@ -416,23 +417,24 @@ def _step_table_data(step: int, shop: str):
 
 # ── Image composition ────────────────────────────────────────────────────────
 
-def generate_step_image(shop: str, step: int, out_dir: Path) -> tuple[Path, Path]:
+def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tuple[Path, Path]:
     shop_name = SHOPS[shop]
+    set_label = SETS[set_id]
 
-    steps_used, ranking = build_ranking_up_to(shop, step)
+    steps_used, ranking = build_ranking_up_to(set_id, shop, step)
     if not ranking:
         print(f"Aucune donnée disponible pour l'étape {step}.")
         sys.exit(1)
 
-    all_steps = available_steps(shop)
+    all_steps = available_steps(set_id, shop)
     step_idx = all_steps.index(step) if step in all_steps else -1
     prev_ranking = None
     if step_idx > 0:
         prev_step = all_steps[step_idx - 1]
-        _, prev_ranking = build_ranking_up_to(shop, prev_step)
+        _, prev_ranking = build_ranking_up_to(set_id, shop, prev_step)
 
     r_title, r_headers, r_rows, r_aligns, r_hl, r_footer, r_mw, r_future, r_highlight = _ranking_table_data(steps_used, ranking, shop_name, prev_ranking, current_step=step)
-    step_data = _step_table_data(step, shop)
+    step_data = _step_table_data(set_id, step, shop)
     if step_data is None:
         print(f"Aucune donnée pour l'étape {step}")
         sys.exit(1)
@@ -463,7 +465,7 @@ def generate_step_image(shop: str, step: int, out_dir: Path) -> tuple[Path, Path
     )
 
     shop_header_h = FONT_SIZE_SHOP + PADDING_Y * 3
-    shop_min_w = text_width(shop_name.upper(), font_shop) + PADDING_X * 4
+    shop_min_w = text_width(f"{shop_name.upper()} — {set_label.upper()}", font_shop) + PADDING_X * 4
     img_width = max(PADDING_X + r_panel_w + PANEL_GAP + s_panel_w + PADDING_X, shop_min_w)
     panels_height = max(r_panel_h, s_panel_h) + PADDING_Y * 2 + shop_header_h
     bareme_height = BAREME_PADDING * 2 + BAREME_HEIGHT + 4 * SCALE + BAREME_PADDING
@@ -472,9 +474,16 @@ def generate_step_image(shop: str, step: int, out_dir: Path) -> tuple[Path, Path
     img = Image.new("RGB", (img_width, img_height), BG)
     draw = ImageDraw.Draw(img)
 
-    shop_label = shop_name.upper()
-    sw = text_width(shop_label, font_shop)
-    draw.text(((img_width - sw) / 2, PADDING_Y + 4 * SCALE), shop_label, fill=ACCENT_TITLE, font=font_shop)
+    header_label = f"{shop_name.upper()} — {set_label.upper()}"
+    sw = text_width(header_label, font_shop)
+    draw.text(((img_width - sw) / 2, PADDING_Y + 4 * SCALE), header_label, fill=ACCENT_TITLE, font=font_shop)
+
+    # Date de génération (heure de Paris) en haut à droite
+    paris_tz = timezone(timedelta(hours=2))
+    now = datetime.now(paris_tz)
+    date_str = f"Généré le {now.strftime('%d/%m/%Y %H:%M')}"
+    dw = text_width(date_str, font_footer)
+    draw.text((img_width - dw - PADDING_X, PADDING_Y + 4 * SCALE), date_str, fill=TEXT_DIM, font=font_footer)
 
     panels_y = PADDING_Y + shop_header_h
 
