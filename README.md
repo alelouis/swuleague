@@ -2,7 +2,7 @@
 
 Générateur d'images de classement pour ligues [Star Wars Unlimited](https://www.starwarsunlimited.com/).
 
-Produit des images PNG/WebP combinant classement général et résultats par étape, prêtes à être partagées sur Discord.
+Produit des images PNG/WebP combinant classement général et résultats par étape, prêtes à être partagées sur Discord. Les images sont organisées par set et par boutique.
 
 ## Installation
 
@@ -13,23 +13,30 @@ pip install .
 ## Utilisation
 
 ```bash
-# Générer les images pour toutes les boutiques
+# Générer les images pour toutes les boutiques (set courant)
 python image.py
 
 # Générer pour une boutique spécifique
 python image.py -b all4play
+
+# Générer pour un set spécifique
+python image.py -s set-7
+
+# Combiner les deux
+python image.py -s set-7 -b cercle-du-jeu
 ```
 
 ## Données
 
-Les résultats sont stockés en CSV dans `data/<boutique>/etape_NN.csv` :
+Les résultats sont stockés en CSV dans `data/<set>/<boutique>/etape_NN.csv` :
 
 ```csv
 joueur,victoires,defaites,recrutement
-CrYad,3,0,0
-Alelouis,2,1,1
+Eivro,3,1,0
+ADB_Samyfit,3,1,0
 ```
 
+- `victoires` / `defaites` = score des matchs (W-L)
 - `recrutement` = nombre de nouvelles recrues amenées par ce joueur à cette étape
 
 ## Barème
@@ -43,15 +50,23 @@ Alelouis,2,1,1
 
 ## Ajouter une boutique
 
-Ajouter une entrée dans le dictionnaire `SHOPS` de `data.py`, puis créer le dossier `data/<slug>/` avec les CSV d'étapes.
+Ajouter une entrée dans `SHOPS` de `data.py`, puis créer le dossier `data/<set>/<slug>/` avec les CSV d'étapes.
+
+## Ajouter un set
+
+Ajouter une entrée dans `SETS` de `data.py` et mettre à jour `CURRENT_SET`. Créer les dossiers `data/<nouveau-set>/<boutique>/`.
+
+## CI/CD
+
+Un workflow GitHub Actions génère automatiquement les images et crée une release à chaque push modifiant `data/`. Il peut aussi être déclenché manuellement. Les assets sont nommés `<set>_<boutique>_etape_NN.png`.
 
 ## Structure
 
 ```
 data.py      # Modèle de données, I/O CSV, scoring, ranking
 theme.py     # Palette couleurs, fonts, constantes layout
-drawing.py   # Rendu PIL (panels, barème, composition)
+drawing.py   # Rendu PIL (panels, barème, disclaimer, composition)
 image.py     # Point d'entrée CLI
-fonts/       # Polices TX-02 embarquées
-data/        # Fichiers CSV par boutique
+fonts/       # Polices JetBrains Mono (OFL)
+data/        # Fichiers CSV par set et boutique
 ```

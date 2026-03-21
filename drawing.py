@@ -26,7 +26,7 @@ from theme import (
     FONT_SIZE_SHOP, FONT_SIZE_CELL, FONT_SIZE_HEADER,
     ROW_HEIGHT, HEADER_HEIGHT, TITLE_HEIGHT, FOOTER_HEIGHT,
     PADDING_X, PADDING_Y, COL_GAP, PANEL_GAP,
-    BAREME_HEIGHT, BAREME_PADDING,
+    BAREME_HEIGHT, BAREME_PADDING, FONT_SIZE_BAREME,
     font_shop, font_title, font_header, font_cell, font_bold,
     font_footer, font_bareme,
 )
@@ -275,6 +275,35 @@ def draw_bareme(draw: ImageDraw.Draw, ox: int, oy: int, width: int) -> int:
     return y - oy
 
 
+# ── Disclaimer ────────────────────────────────────────────────────────────────
+
+DISCLAIMER = "Ce classement est indicatif et ne fait pas foi. Seul le classement officiel tenu par la boutique est valable. Ce document ne remplace pas les feuilles d'émargement."
+DISCLAIMER_TEXT_COLOR = "#8b3030"
+DISCLAIMER_BORDER_COLOR = "#5c2020"
+DISCLAIMER_PAD_X = 16 * SCALE
+DISCLAIMER_PAD_Y = 8 * SCALE
+DISCLAIMER_RADIUS = 8 * SCALE
+DISCLAIMER_HEIGHT = FONT_SIZE_BAREME + DISCLAIMER_PAD_Y * 2 + BAREME_PADDING * 2
+
+def draw_disclaimer(draw: ImageDraw.Draw, ox: int, oy: int, width: int) -> int:
+    dw = text_width(DISCLAIMER, font_bareme)
+    box_w = dw + DISCLAIMER_PAD_X * 2
+    box_h = FONT_SIZE_BAREME + DISCLAIMER_PAD_Y * 2
+    bx = ox + (width - box_w) / 2
+    by = oy + BAREME_PADDING
+    draw.rounded_rectangle(
+        [(bx, by), (bx + box_w, by + box_h)],
+        radius=DISCLAIMER_RADIUS,
+        outline=DISCLAIMER_BORDER_COLOR,
+        width=SCALE,
+    )
+    draw.text(
+        (bx + DISCLAIMER_PAD_X, by + DISCLAIMER_PAD_Y),
+        DISCLAIMER, fill=DISCLAIMER_TEXT_COLOR, font=font_bareme,
+    )
+    return DISCLAIMER_HEIGHT
+
+
 # ── Table data: ranking ──────────────────────────────────────────────────────
 
 def _ranking_table_data(steps, ranking, shop_name: str, prev_ranking: list[dict] | None = None, current_step: int | None = None):
@@ -470,7 +499,7 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
     img_width = max(PADDING_X + r_panel_w + PANEL_GAP + s_panel_w + PADDING_X, shop_min_w)
     panels_height = max(r_panel_h, s_panel_h) + PADDING_Y * 2 + shop_header_h
     bareme_height = BAREME_PADDING * 2 + BAREME_HEIGHT + 4 * SCALE + BAREME_PADDING
-    img_height = panels_height + bareme_height
+    img_height = panels_height + bareme_height + DISCLAIMER_HEIGHT
 
     img = Image.new("RGB", (img_width, img_height), BG)
     draw = ImageDraw.Draw(img)
@@ -505,7 +534,8 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
         fill=ACCENT_LINE, width=SCALE,
     )
 
-    draw_bareme(draw, 0, panels_height, img_width)
+    bareme_h = draw_bareme(draw, 0, panels_height, img_width)
+    draw_disclaimer(draw, 0, panels_height + bareme_h, img_width)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     base = f"etape_{step:02d}"
