@@ -20,7 +20,7 @@ SHOPS = {
 }
 
 NUM_STEPS = 10
-CSV_FIELDS = ["joueur", "victoires", "defaites", "recrutement"]
+CSV_FIELDS = ["joueur", "victoires", "defaites", "nuls", "recrutement"]
 
 PTS_PARTICIPATION = 2
 PTS_VICTOIRE      = 2
@@ -35,10 +35,11 @@ class StepResult(NamedTuple):
     joueur:      str
     victoires:   int
     defaites:    int
+    nuls:        int
     recrutement: int  # nombre de recrues (pas encore multiplié par 5)
 
     @property
-    def parties(self):           return self.victoires + self.defaites
+    def parties(self):           return self.victoires + self.defaites + self.nuls
     @property
     def pts_participation(self): return PTS_PARTICIPATION if self.parties > 0 else 0
     @property
@@ -74,6 +75,7 @@ def load_step(set_id: str, step: int, shop: str) -> list[StepResult]:
                 joueur      = joueur,
                 victoires   = int(row.get("victoires",   0) or 0),
                 defaites    = int(row.get("defaites",    0) or 0),
+                nuls        = int(row.get("nuls",        0) or 0),
                 recrutement = int(row.get("recrutement", 0) or 0),
             ))
     return results

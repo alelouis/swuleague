@@ -1,7 +1,7 @@
-joueur,victoires,defaites,recrutement
-Charlie,3,0,0
-Golf,2,1,0
-Alpha,2,1,0
-Bravo,1,2,0
-Echo,1,2,0
-India,0,3,1
+joueur,victoires,defaites,nuls,recrutement
+Charlie,3,0,0,0
+Golf,2,1,0,0
+Alpha,2,1,0,0
+Bravo,1,2,0,0
+Echo,1,2,0,0
+India,0,3,0,1

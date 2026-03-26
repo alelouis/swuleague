@@ -412,9 +412,9 @@ def _step_table_data(set_id: str, step: int, shop: str):
         return None
     results = sorted(results, key=lambda r: (-r.total, -r.victoires, r.joueur))
 
-    headers = ["#", "Joueur", "V", "D", "Particip.", "Victoires", "Parties", "Recrutem.", "TOTAL"]
-    aligns  = ["right", "left", "right", "right", "right", "right", "right", "right", "right"]
-    min_ws  = [30 * SCALE, 90 * SCALE, 28 * SCALE, 28 * SCALE,
+    headers = ["#", "Joueur", "V", "D", "N", "Particip.", "Victoires", "Parties", "Recrutem.", "TOTAL"]
+    aligns  = ["right", "left", "right", "right", "right", "right", "right", "right", "right", "right"]
+    min_ws  = [30 * SCALE, 90 * SCALE, 28 * SCALE, 28 * SCALE, 28 * SCALE,
                42 * SCALE, 42 * SCALE, 42 * SCALE, 42 * SCALE, 48 * SCALE]
 
     rows = []
@@ -425,17 +425,17 @@ def _step_table_data(set_id: str, step: int, shop: str):
         last = len(headers) - 1
         rows.append([
             f"{rank}.", r.joueur,
-            str(r.victoires), str(r.defaites),
+            str(r.victoires), str(r.defaites), str(r.nuls),
             f"+{r.pts_participation}", f"+{r.pts_victoires}",
             f"+{r.pts_parties}", f"+{r.pts_recrutement}", str(r.total),
         ])
         hl: dict = {
             "bold_cols": {last},
             "color_cols": {1: player_color},
-            "color_only_cols": {2: TEXT_UP, 3: TEXT_DOWN},
+            "color_only_cols": {2: TEXT_UP, 3: TEXT_DOWN, 4: TEXT_DIM},
         }
         if r.pts_recrutement == 0:
-            hl.setdefault("dim_cols", set()).add(7)
+            hl.setdefault("dim_cols", set()).add(8)
         highlights.append(hl)
 
     total_parties = sum(r.parties for r in results)
