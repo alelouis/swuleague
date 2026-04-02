@@ -31,13 +31,19 @@ python image.py -s set-7 -b cercle-du-jeu
 Les résultats sont stockés en CSV dans `data/<set>/<boutique>/etape_NN.csv` :
 
 ```csv
-joueur,victoires,defaites,recrutement
-Eivro,3,1,0
-ADB_Samyfit,3,1,0
+joueur,victoires,defaites,nuls,recrutement
+Eivro,3,1,0,0
+ADB_Samyfit,3,1,0,0
 ```
 
-- `victoires` / `defaites` = score des matchs (W-L)
+- `victoires` / `defaites` / `nuls` = score des matchs (W-L-D)
 - `recrutement` = nombre de nouvelles recrues amenées par ce joueur à cette étape
+
+Pour générer un CSV depuis un copié-collé melee.gg :
+
+```bash
+python parse_melee.py resultats.txt -o data/set-7/boutique/etape_02.csv
+```
 
 ## Barème
 
@@ -63,10 +69,11 @@ Un workflow GitHub Actions génère automatiquement les images et crée une rele
 ## Structure
 
 ```
-data.py      # Modèle de données, I/O CSV, scoring, ranking
-theme.py     # Palette couleurs, fonts, constantes layout
-drawing.py   # Rendu PIL (panels, barème, disclaimer, composition)
-image.py     # Point d'entrée CLI
-fonts/       # Polices JetBrains Mono (OFL)
-data/        # Fichiers CSV par set et boutique
+data.py          # Modèle de données, I/O CSV, scoring, ranking
+theme.py         # Palette couleurs, fonts, constantes layout
+drawing.py       # Rendu PIL (panels, barème, disclaimer, composition)
+image.py         # Point d'entrée CLI
+parse_melee.py   # Parser copié-collé melee.gg → CSV
+fonts/           # Polices JetBrains Mono (OFL)
+data/            # Fichiers CSV par set et boutique
 ```
