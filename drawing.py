@@ -406,11 +406,16 @@ def _ranking_table_data(steps, ranking, shop_name: str, prev_ranking: list[dict]
 
 # ── Table data: step ──────────────────────────────────────────────────────────
 
-def _step_table_data(set_id: str, step: int, shop: str):
+def _step_table_data(set_id: str, step: int, shop: str, recruitment_bonuses: dict[str, int] | None = None):
     results = load_step(set_id, step, shop)
     if not results:
         return None
-    results = sorted(results, key=lambda r: (-r.total, -r.victoires, r.joueur))
+    if recruitment_bonuses is None:
+        recruitment_bonuses = {}
+    results = sorted(
+        results,
+        key=lambda r: (-(r.total + recruitment_bonuses.get(r.joueur, 0)), -r.victoires, r.joueur),
+    )
 
     headers = ["#", "Joueur", "V", "D", "N", "Particip.", "Victoires", "Parties", "Recrutem.", "TOTAL"]
     aligns  = ["right", "left", "right", "right", "right", "right", "right", "right", "right", "right"]
@@ -423,18 +428,20 @@ def _step_table_data(set_id: str, step: int, shop: str):
         rank = i + 1
         player_color = _player_color(r.joueur)
         last = len(headers) - 1
+        pts_recrutement = recruitment_bonuses.get(r.joueur, 0)
+        step_total = r.total - r.pts_recrutement + pts_recrutement
         rows.append([
             f"{rank}.", r.joueur,
             str(r.victoires), str(r.defaites), str(r.nuls),
             f"+{r.pts_participation}", f"+{r.pts_victoires}",
-            f"+{r.pts_parties}", f"+{r.pts_recrutement}", str(r.total),
+            f"+{r.pts_parties}", f"+{pts_recrutement}", str(step_total),
         ])
         hl: dict = {
             "bold_cols": {last},
             "color_cols": {1: player_color},
             "color_only_cols": {2: TEXT_UP, 3: TEXT_DOWN, 4: TEXT_DIM},
         }
-        if r.pts_recrutement == 0:
+        if pts_recrutement == 0:
             hl.setdefault("dim_cols", set()).add(8)
         highlights.append(hl)
 
@@ -451,7 +458,7 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
     shop_name = SHOPS[shop]
     set_label = SETS[set_id]
 
-    steps_used, ranking = build_ranking_up_to(set_id, shop, step)
+    steps_used, ranking, bonuses_par_etape = build_ranking_up_to(set_id, shop, step)
     if not ranking:
         print(f"Aucune donnée disponible pour l'étape {step}.")
         sys.exit(1)
@@ -461,10 +468,10 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
     prev_ranking = None
     if step_idx > 0:
         prev_step = all_steps[step_idx - 1]
-        _, prev_ranking = build_ranking_up_to(set_id, shop, prev_step)
+        _, prev_ranking, _ = build_ranking_up_to(set_id, shop, prev_step)
 
     r_title, r_headers, r_rows, r_aligns, r_hl, r_footer, r_mw, r_future, r_highlight = _ranking_table_data(steps_used, ranking, shop_name, prev_ranking, current_step=step)
-    step_data = _step_table_data(set_id, step, shop)
+    step_data = _step_table_data(set_id, step, shop, bonuses_par_etape.get(step, {}))
     if step_data is None:
         print(f"Aucune donnée pour l'étape {step}")
         sys.exit(1)
