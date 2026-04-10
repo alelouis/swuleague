@@ -37,7 +37,7 @@ ADB_Samyfit,3,1,0,0
 ```
 
 - `victoires` / `defaites` / `nuls` = score des matchs (W-L-D)
-- `recrutement` = nombre de nouvelles recrues amenées par ce joueur à cette étape
+- `recrutement` = (héritage, non utilisé — voir `recrutement.csv` ci-dessous)
 
 Pour générer un CSV depuis un copié-collé melee.gg :
 
@@ -45,14 +45,51 @@ Pour générer un CSV depuis un copié-collé melee.gg :
 python parse_melee.py resultats.txt -o data/set-7/boutique/etape_02.csv
 ```
 
+### Recrutement
+
+Les paires recrue → recruteur sont stockées dans `data/<set>/<boutique>/recrutement.csv` :
+
+```csv
+recrue,recruteur
+TheHolyBob,ADB_RemiWanKenobi
+le_Schtroumpf,Ecto
+```
+
+Le recruteur reçoit **+5 pts** dès que sa recrue dépasse **15 points cumulés** (seuil `SEUIL_RECRUTEMENT`), une seule fois par recrue.
+
+### Alias de joueurs
+
+Quand un joueur change son pseudo melee.gg, on normalise toutes ses occurrences via `PLAYER_ALIASES` dans `data.py` :
+
+```python
+PLAYER_ALIASES = {
+    "Dracos": "ADB_Dracos",
+    "Eivro":  "ADB_Eivro",
+}
+```
+
+### Jeu libre (étape forfait)
+
+Une étape amicale (sans enjeu de classement interne) peut être marquée en ajoutant `# forfait` en première ligne du CSV :
+
+```csv
+# forfait
+joueur,victoires,defaites,nuls,recrutement
+Darkus,3,0,0,0
+...
+```
+
+Chaque participant reçoit alors **11 pts forfaitaires** (le maximum). Le panneau d'étape masque les colonnes V/D/N et affiche un pied *"Jeu libre — 11 pts forfait pour chaque participant"*.
+
 ## Barème
 
-| Catégorie     | Points                       |
-|---------------|------------------------------|
-| Participation | +2 pts (min. 1 partie jouée) |
-| Victoires     | +2 pts/victoire (max 6)      |
-| Parties       | +1 pt/partie (max 3)         |
-| Recrutement   | +5 pts/recrue                |
+| Catégorie     | Points                                         |
+|---------------|------------------------------------------------|
+| Participation | +2 pts (min. 1 partie jouée)                   |
+| Victoires     | +2 pts/victoire (max 6)                        |
+| Parties       | +1 pt/partie (max 3)                           |
+| Recrutement   | +5 pts/recrue (quand la recrue atteint 15 pts) |
+| Jeu libre     | 11 pts forfaitaires pour chaque participant    |
 
 ## Ajouter une boutique
 
