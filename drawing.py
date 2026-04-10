@@ -469,7 +469,7 @@ def _step_table_data(set_id: str, step: int, shop: str, recruitment_bonuses: dic
 
 # ── Image composition ────────────────────────────────────────────────────────
 
-def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tuple[Path, Path]:
+def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> Path:
     shop_name = SHOPS[shop]
     set_label = SETS[set_id]
 
@@ -560,9 +560,6 @@ def generate_step_image(set_id: str, shop: str, step: int, out_dir: Path) -> tup
     draw_disclaimer(draw, 0, panels_height + bareme_h, img_width)
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    base = f"etape_{step:02d}"
-    png_path = out_dir / f"{base}.png"
-    webp_path = out_dir / f"{base}.webp"
-    img.save(png_path, "PNG")
+    webp_path = out_dir / f"etape_{step:02d}.webp"
     img.save(webp_path, "WEBP", quality=90)
-    return png_path, webp_path
+    return webp_path

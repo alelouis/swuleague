@@ -2,7 +2,7 @@
 
 Générateur d'images de classement pour ligues [Star Wars Unlimited](https://www.starwarsunlimited.com/).
 
-Produit des images PNG/WebP combinant classement général et résultats par étape, prêtes à être partagées sur Discord. Les images sont organisées par set et par boutique.
+Produit des images WebP combinant classement général et résultats par étape, prêtes à être partagées sur Discord. Les images sont organisées par set et par boutique.
 
 ## Installation
 
@@ -101,7 +101,7 @@ Ajouter une entrée dans `SETS` de `data.py` et mettre à jour `CURRENT_SET`. Cr
 
 ## CI/CD
 
-Un workflow GitHub Actions génère automatiquement les images et crée une release à chaque push modifiant `data/`. Il peut aussi être déclenché manuellement. Les assets sont nommés `<set>_<boutique>_etape_NN.png`.
+Un workflow GitHub Actions génère automatiquement les images et crée une release à chaque push modifiant `data/`. Il peut aussi être déclenché manuellement. Les assets sont nommés `<set>_<boutique>_etape_NN.webp`.
 
 ## Structure
 

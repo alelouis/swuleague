@@ -30,8 +30,8 @@ jobs:
       - name: Prepare release assets
         run: |
           mkdir -p release_assets
-          # output/set-7/all4play/etape_01.png -> release_assets/set-7_all4play_etape_01.png
-          for f in $(find output -name '*.png' -o -name '*.webp' | sort); do
+          # output/set-7/all4play/etape_01.webp -> release_assets/set-7_all4play_etape_01.webp
+          for f in $(find output -name '*.webp' | sort); do
             rel="${f#output/}"
             flat=$(echo "$rel" | tr '/' '_')
             cp "$f" "release_assets/$flat"
@@ -53,10 +53,10 @@ jobs:
           PREV_SET="" PREV_SHOP=""
           for f in $FILES; do
             name=$(basename "$f")
-            # set-7_all4play_etape_01.png -> set=set-7 shop=all4play rest=etape_01.png
+            # set-7_all4play_etape_01.webp -> set=set-7 shop=all4play rest=etape_01.webp
             set_id=$(echo "$name" | cut -d_ -f1-2)   # e.g. set-7
             shop=$(echo "$name" | cut -d_ -f3)        # e.g. all4play
-            rest=$(echo "$name" | cut -d_ -f4-)       # e.g. etape_01.png
+            rest=$(echo "$name" | cut -d_ -f4-)       # e.g. etape_01.webp
             if [ "$set_id" != "$PREV_SET" ]; then
               BODY+=$'\n'"### ${set_id}"$'\n'
               PREV_SET="$set_id" PREV_SHOP=""

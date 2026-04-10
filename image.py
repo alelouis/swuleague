@@ -11,13 +11,14 @@ Usage:
 
 import argparse
 import sys
+from pathlib import Path
 
 from data import available_steps, SHOPS, SETS, CURRENT_SET
 from drawing import generate_step_image
 from theme import OUTPUT_DIR
 
 
-def generate_all_images(set_id: str, shop: str) -> list[tuple]:
+def generate_all_images(set_id: str, shop: str) -> list[Path]:
     steps = available_steps(set_id, shop)
     if not steps:
         print(f"Aucun fichier d'étape trouvé dans data/{set_id}/{shop}/")
@@ -26,7 +27,7 @@ def generate_all_images(set_id: str, shop: str) -> list[tuple]:
     return [generate_step_image(set_id, shop, step, out_dir) for step in steps]
 
 
-def generate_all_shops(set_id: str) -> list[tuple]:
+def generate_all_shops(set_id: str) -> list[Path]:
     all_paths = []
     for shop in SHOPS:
         steps = available_steps(set_id, shop)
@@ -63,8 +64,8 @@ def main():
         paths = generate_all_images(set_id, args.boutique)
     else:
         paths = generate_all_shops(set_id)
-    for png, webp in paths:
-        print(f"  {png}  ({webp})")
+    for webp in paths:
+        print(f"  {webp}")
 
 
 if __name__ == "__main__":
