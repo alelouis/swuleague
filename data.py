@@ -41,25 +41,34 @@ def canonical_name(name: str) -> str:
 
 # ── Data model ────────────────────────────────────────────────────────────────
 
+PTS_FORFAIT_MAX = PTS_PARTICIPATION + PTS_VICTOIRE_MAX + PTS_PARTIE_MAX  # = 11
+
 class StepResult(NamedTuple):
     joueur:      str
     victoires:   int
     defaites:    int
     nuls:        int
     recrutement: int  # nombre de recrues (pas encore multiplié par 5)
+    forfait:     bool = False  # tournoi amical : 11 pts forfaitaires pour tous
 
     @property
     def parties(self):           return self.victoires + self.defaites + self.nuls
     @property
-    def pts_participation(self): return PTS_PARTICIPATION if self.parties > 0 else 0
+    def pts_participation(self): return PTS_PARTICIPATION if (self.forfait or self.parties > 0) else 0
     @property
-    def pts_victoires(self):     return min(self.victoires * PTS_VICTOIRE, PTS_VICTOIRE_MAX)
+    def pts_victoires(self):
+        if self.forfait: return PTS_VICTOIRE_MAX
+        return min(self.victoires * PTS_VICTOIRE, PTS_VICTOIRE_MAX)
     @property
-    def pts_parties(self):       return min(self.parties, PTS_PARTIE_MAX)
+    def pts_parties(self):
+        if self.forfait: return PTS_PARTIE_MAX
+        return min(self.parties, PTS_PARTIE_MAX)
     @property
     def pts_recrutement(self):   return self.recrutement * PTS_RECRUTEMENT
     @property
     def total(self):
+        if self.forfait:
+            return PTS_FORFAIT_MAX + self.pts_recrutement
         return (self.pts_participation + self.pts_victoires
                 + self.pts_parties + self.pts_recrutement)
 
@@ -75,20 +84,30 @@ def load_step(set_id: str, step: int, shop: str) -> list[StepResult]:
     path = csv_path(set_id, step, shop)
     if not path.exists():
         return []
+
+    # Détecte et retire les lignes de commentaires en tête (#),
+    # et repère un éventuel marqueur "# forfait".
+    raw_lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+    forfait = False
+    while raw_lines and raw_lines[0].lstrip().startswith("#"):
+        if "forfait" in raw_lines[0].lower():
+            forfait = True
+        raw_lines = raw_lines[1:]
+
     results = []
-    with open(path, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            joueur = row.get("joueur", "").strip()
-            if not joueur or joueur.startswith("#"):
-                continue
-            joueur = canonical_name(joueur)
-            results.append(StepResult(
-                joueur      = joueur,
-                victoires   = int(row.get("victoires",   0) or 0),
-                defaites    = int(row.get("defaites",    0) or 0),
-                nuls        = int(row.get("nuls",        0) or 0),
-                recrutement = int(row.get("recrutement", 0) or 0),
-            ))
+    for row in csv.DictReader(raw_lines):
+        joueur = row.get("joueur", "").strip()
+        if not joueur or joueur.startswith("#"):
+            continue
+        joueur = canonical_name(joueur)
+        results.append(StepResult(
+            joueur      = joueur,
+            victoires   = int(row.get("victoires",   0) or 0),
+            defaites    = int(row.get("defaites",    0) or 0),
+            nuls        = int(row.get("nuls",        0) or 0),
+            recrutement = int(row.get("recrutement", 0) or 0),
+            forfait     = forfait,
+        ))
     return results
 
 def available_steps(set_id: str, shop: str) -> list[int]:

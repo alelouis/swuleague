@@ -412,10 +412,15 @@ def _step_table_data(set_id: str, step: int, shop: str, recruitment_bonuses: dic
         return None
     if recruitment_bonuses is None:
         recruitment_bonuses = {}
-    results = sorted(
-        results,
-        key=lambda r: (-(r.total + recruitment_bonuses.get(r.joueur, 0)), -r.victoires, r.joueur),
-    )
+    forfait = any(r.forfait for r in results)
+    if forfait:
+        # Tournoi amical : tout le monde à égalité, tri alphabétique.
+        results = sorted(results, key=lambda r: r.joueur.lower())
+    else:
+        results = sorted(
+            results,
+            key=lambda r: (-(r.total + recruitment_bonuses.get(r.joueur, 0)), -r.victoires, r.joueur),
+        )
 
     headers = ["#", "Joueur", "V", "D", "N", "Particip.", "Victoires", "Parties", "Recrutem.", "TOTAL"]
     aligns  = ["right", "left", "right", "right", "right", "right", "right", "right", "right", "right"]
@@ -430,9 +435,13 @@ def _step_table_data(set_id: str, step: int, shop: str, recruitment_bonuses: dic
         last = len(headers) - 1
         pts_recrutement = recruitment_bonuses.get(r.joueur, 0)
         step_total = r.total - r.pts_recrutement + pts_recrutement
+        if r.forfait:
+            v_str, d_str, n_str = "-", "-", "-"
+        else:
+            v_str, d_str, n_str = str(r.victoires), str(r.defaites), str(r.nuls)
         rows.append([
             f"{rank}.", r.joueur,
-            str(r.victoires), str(r.defaites), str(r.nuls),
+            v_str, d_str, n_str,
             f"+{r.pts_participation}", f"+{r.pts_victoires}",
             f"+{r.pts_parties}", f"+{pts_recrutement}", str(step_total),
         ])
@@ -441,12 +450,18 @@ def _step_table_data(set_id: str, step: int, shop: str, recruitment_bonuses: dic
             "color_cols": {1: player_color},
             "color_only_cols": {2: TEXT_UP, 3: TEXT_DOWN, 4: TEXT_DIM},
         }
+        if r.forfait:
+            hl.setdefault("dim_cols", set()).update({2, 3, 4})
+            hl.pop("color_only_cols", None)
         if pts_recrutement == 0:
             hl.setdefault("dim_cols", set()).add(8)
         highlights.append(hl)
 
-    total_parties = sum(r.parties for r in results)
-    footer = f"{len(results)} participants  ·  {total_parties} parties jouées"
+    if forfait:
+        footer = f"{len(results)} participants  ·  Jeu libre — 11 pts forfait pour chaque participant"
+    else:
+        total_parties = sum(r.parties for r in results)
+        footer = f"{len(results)} participants  ·  {total_parties} parties jouées"
     title = f"ÉTAPE {step} / {NUM_STEPS}"
 
     return title, headers, rows, aligns, highlights, footer, min_ws
