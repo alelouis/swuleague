@@ -14,9 +14,10 @@ SETS = {
 CURRENT_SET = "set-7"
 
 SHOPS = {
-    "all4play":      "All4Play",
-    "cercle-du-jeu": "Le Cercle du Jeu",
-    "test":          "Boutique Test",
+    "all4play":            "All4Play",
+    "cercle-du-jeu":       "Le Cercle du Jeu",
+    "sortileges-perpignan": "Sortilèges Perpignan",
+    "test":                "Boutique Test",
 }
 
 NUM_STEPS = 10
