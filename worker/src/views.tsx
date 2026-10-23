@@ -26,6 +26,7 @@ const BAREME = [
   ["Recrutement", `+${PTS_RECRUTEMENT} pts/recrue (${SEUIL_RECRUTEMENT} pts)`],
   ["Jeu libre", `${PTS_FORFAIT_MAX} pts forfait`],
 ];
+const THEME_INIT = `try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="dark"}`;
 const range = (a: number, b: number) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
 
 /** JSON sûr à l'intérieur d'une balise <script> (comme le filtre tojson de Jinja). */
@@ -39,13 +40,21 @@ export const Layout: FC<{ ctx: Ctx; title: string; nav?: Child; children?: Child
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="color-scheme" content="dark light" />
+      {/* Thème appliqué avant le premier rendu : choix enregistré, sinon celui du système */}
+      <script>{raw(THEME_INIT)}</script>
       <title>{title}</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;800&display=swap" />
       <link rel="stylesheet" href="/static/style.css" />
       <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+      <script src="/static/theme.js" defer></script>
     </head>
     <body>
-      <header class="topbar">
-        <a class="brand" href="/">SWU<span>league</span></a>
+      <header class="topbar"><div class="topbar-inner">
+        <span class="header-logo" aria-hidden="true" />
+        <a class="brand" href="/"><img src="/static/favicon.svg" alt="" />SWU<span>league</span></a>
         <nav>
           {nav}
           {isOwner(ctx.user) && <a href="/gestion" aria-current={ctx.path === "/gestion" ? "page" : undefined}>Gestion</a>}
@@ -58,8 +67,12 @@ export const Layout: FC<{ ctx: Ctx; title: string; nav?: Child; children?: Child
           ) : (
             <a href={`/login?next=${encodeURIComponent(ctx.path)}`}>Organisateurs</a>
           )}
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
+            <svg class="i-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+            <svg class="i-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+          </button>
         </nav>
-      </header>
+      </div></header>
       <main>
         {ctx.flashes.map(([kind, msg]) => <div class={`flash flash-${kind}`} role="status">{msg}</div>)}
         {children}
