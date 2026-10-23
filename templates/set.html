@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ SETS[set_id] }} — Ligues SWU{% endblock %}
+{% block nav %}
+  {% if SETS|length > 1 %}
+    {% for sid, label in SETS.items() %}
+      <a href="{{ url_for('set_view', set_id=sid) }}" {% if sid == set_id %}aria-current="page"{% endif %}>{{ label }}</a>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+{% block content %}
+<header class="hero">
+  <p class="eyebrow">Star Wars Unlimited</p>
+  <h1>Ligues locales <span class="sep">—</span> {{ SETS[set_id] }}</h1>
+</header>
+
+<div class="cards">
+  {% for l in leagues %}
+  <a class="card" href="{{ url_for('shop_view', set_id=set_id, shop=l.slug) }}">
+    <h2>{{ l.name }}</h2>
+    <div class="meta">
+      <span>{{ l.steps|length }}/{{ NUM_STEPS }} étapes jouées</span>
+      <span class="progress" aria-hidden="true">
+        {% for s in range(1, NUM_STEPS + 1) %}<i class="{{ 'on' if s in l.steps }}"></i>{% endfor %}
+      </span>
+    </div>
+    {% if l.top %}
+      <ol class="podium">
+        {% for p in l.top %}
+          <li class="rank-{{ loop.index }}" style="--c: {{ player_color(p.joueur) }}">
+            <span class="medal">{{ loop.index }}.</span>
+            <span class="n">{{ p.joueur }}</span>
+            <b>{{ p.total }}</b>
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p class="empty-note">La saison n'a pas encore commencé.</p>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

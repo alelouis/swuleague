@@ -3,22 +3,76 @@ data.py — Modèle de données, I/O CSV, constantes scoring, ranking
 """
 
 import csv
+import json
+import re
+import unicodedata
 from pathlib import Path
 from typing import NamedTuple
 
 # ── Configuration ─────────────────────────────────────────────────────────────
+# Sets, boutiques et set en cours sont stockés dans data/leagues.json
+# (modifiable depuis l'application web). SETS et SHOPS sont mis à jour sur place
+# pour que les modules qui les importent voient les ajouts.
 
-SETS = {
-    "set-7": "Set 7",
-}
-CURRENT_SET = "set-7"
+DATA_ROOT = Path(__file__).resolve().parent / "data"
+LEAGUES_FILE = DATA_ROOT / "leagues.json"
 
-SHOPS = {
-    "all4play":            "All4Play",
-    "cercle-du-jeu":       "Le Cercle du Jeu",
-    "sortileges-perpignan": "Sortilèges Perpignan",
-    "test":                "Boutique Test",
-}
+def _load_leagues() -> dict:
+    return json.loads(LEAGUES_FILE.read_text(encoding="utf-8"))
+
+_leagues = _load_leagues()
+SETS: dict[str, str] = dict(_leagues["sets"])
+SHOPS: dict[str, str] = dict(_leagues["shops"])
+CURRENT_SET: str = _leagues["current_set"]
+
+def _save_leagues() -> None:
+    payload = {"current_set": CURRENT_SET, "sets": SETS, "shops": SHOPS}
+    LEAGUES_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+def slugify(name: str) -> str:
+    """« Sortilèges Perpignan » → « sortileges-perpignan »"""
+    ascii_name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
+
+def _check_new(kind: dict[str, str], slug: str, label: str) -> None:
+    if not label.strip():
+        raise ValueError("Le nom est obligatoire.")
+    if not SLUG_RE.match(slug):
+        raise ValueError(f"Identifiant invalide « {slug} » (minuscules, chiffres et tirets).")
+    if slug in kind:
+        raise ValueError(f"L'identifiant « {slug} » existe déjà.")
+
+def add_set(slug: str, label: str, make_current: bool = False) -> None:
+    global CURRENT_SET
+    _check_new(SETS, slug, label)
+    SETS[slug] = label.strip()
+    if make_current:
+        CURRENT_SET = slug
+    _save_leagues()
+
+def add_shop(slug: str, label: str) -> None:
+    _check_new(SHOPS, slug, label)
+    SHOPS[slug] = label.strip()
+    _save_leagues()
+
+def rename(kind: str, slug: str, label: str) -> None:
+    target = {"set": SETS, "shop": SHOPS}[kind]
+    if slug not in target or not label.strip():
+        raise ValueError("Nom invalide.")
+    target[slug] = label.strip()
+    _save_leagues()
+
+def set_current_set(slug: str) -> None:
+    global CURRENT_SET
+    if slug not in SETS:
+        raise ValueError(f"Set inconnu : {slug}")
+    CURRENT_SET = slug
+    _save_leagues()
+
+def current_set() -> str:
+    return CURRENT_SET
 
 NUM_STEPS = 10
 CSV_FIELDS = ["joueur", "victoires", "defaites", "nuls", "recrutement"]
@@ -76,7 +130,7 @@ class StepResult(NamedTuple):
 # ── CSV I/O ───────────────────────────────────────────────────────────────────
 
 def data_dir(set_id: str, shop: str) -> Path:
-    return Path("data") / set_id / shop
+    return DATA_ROOT / set_id / shop
 
 def csv_path(set_id: str, step: int, shop: str) -> Path:
     return data_dir(set_id, shop) / f"etape_{step:02d}.csv"
@@ -118,6 +172,38 @@ def available_steps(set_id: str, shop: str) -> list[int]:
     return [i for i in range(1, NUM_STEPS + 1)
             if csv_path(set_id, i, shop).exists() and load_step(set_id, i, shop)]
 
+def step_source(set_id: str, step: int, shop: str) -> str | None:
+    """URL melee.gg d'origine, si notée en tête du CSV (`# melee: <url>`)."""
+    path = csv_path(set_id, step, shop)
+    if not path.exists():
+        return None
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.lstrip().startswith("#"):
+            break
+        m = re.match(r"\s*#\s*melee:\s*(\S+)", line)
+        if m:
+            return m.group(1)
+    return None
+
+def write_step(set_id: str, step: int, shop: str, results: list[dict],
+               forfait: bool = False, source: str | None = None) -> Path:
+    """Écrit (ou écrase) le CSV d'une étape. `results` : dicts au format CSV_FIELDS."""
+    path = csv_path(set_id, step, shop)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        if forfait:
+            f.write("# forfait\n")
+        if source:
+            f.write(f"# melee: {source}\n")
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        for r in results:
+            writer.writerow({k: r.get(k, 0) for k in CSV_FIELDS})
+    return path
+
+def delete_step(set_id: str, step: int, shop: str) -> None:
+    csv_path(set_id, step, shop).unlink(missing_ok=True)
+
 def load_recruitments(set_id: str, shop: str) -> dict[str, str]:
     """Retourne {recrue: recruteur} depuis recrutement.csv de la ligue."""
     path = data_dir(set_id, shop) / "recrutement.csv"
@@ -132,11 +218,20 @@ def load_recruitments(set_id: str, shop: str) -> dict[str, str]:
                 result[canonical_name(recrue)] = canonical_name(recruteur)
     return result
 
+def write_recruitments(set_id: str, shop: str, pairs: dict[str, str]) -> None:
+    path = data_dir(set_id, shop) / "recrutement.csv"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(["recrue", "recruteur"])
+        for recrue, recruteur in pairs.items():
+            writer.writerow([recrue, recruteur])
+
 # ── Ranking ───────────────────────────────────────────────────────────────────
 
 SEUIL_RECRUTEMENT = 15  # points cumulés pour déclencher le bonus recruteur
 
-def build_ranking_up_to(set_id: str, shop: str, up_to_step: int) -> tuple[list[int], list[dict]]:
+def build_ranking_up_to(set_id: str, shop: str, up_to_step: int) -> tuple[list[int], list[dict], dict[int, dict[str, int]]]:
     """Construit le classement en ne prenant en compte que les étapes <= up_to_step.
 
     Règle recrutement : quand un recruté dépasse SEUIL_RECRUTEMENT points cumulés

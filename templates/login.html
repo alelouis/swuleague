@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Connexion — Ligues SWU{% endblock %}
+{% block content %}
+<form method="post" class="form-panel narrow">
+  <h1>Administration</h1>
+  <input type="hidden" name="next" value="{{ next }}">
+  <label class="block">Mot de passe <input type="password" name="password" required autofocus autocomplete="current-password"></label>
+  <button class="btn primary">Se connecter</button>
+</form>
+{% endblock %}
