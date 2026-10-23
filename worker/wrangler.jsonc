@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "swuleague",
+  "main": "src/index.tsx",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+
+  // CSS, JS et polices servis directement par Cloudflare (sans passer par le Worker)
+  "assets": { "directory": "./public" },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "swuleague",
+      "database_id": "c60d95cd-2710-436a-9a2c-27e527407c4e",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  "vars": {
+    // Identifiant Discord du propriétaire : toujours administrateur principal
+    "OWNER_DISCORD_ID": "98468581750104064",
+    "DISCORD_CLIENT_ID": "1563263485402415134"
+  }
+  // Secret à définir avec `npx wrangler secret put DISCORD_CLIENT_SECRET`
+}

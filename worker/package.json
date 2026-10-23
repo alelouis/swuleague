@@ -1,0 +1,28 @@
+{
+  "name": "swuleague",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc",
+    "db:migrate:local": "wrangler d1 migrations apply swuleague --local",
+    "db:migrate:remote": "wrangler d1 migrations apply swuleague --remote",
+    "db:seed:sql": "uv run --project .. python scripts/csv_to_d1.py --sql seed.sql",
+    "fixtures": "uv run --project .. python scripts/csv_to_d1.py --fixtures test/fixtures.json"
+  },
+  "type": "module",
+  "dependencies": {
+    "hono": "^4.13.13"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261023.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.152.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261019.1": true
+  },
+  "private": true
+}

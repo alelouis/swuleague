@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block title %}{{ SHOPS[shop] }} — {{ SETS[set_id] }}{% endblock %}
+{% block nav %}
+  <a href="{{ url_for('set_view', set_id=set_id) }}">← Toutes les ligues</a>
+{% endblock %}
+{% block content %}
+<header class="hero">
+  <h1>{{ SHOPS[shop] }} <span class="sep">—</span> {{ SETS[set_id] }}</h1>
+  <div class="actions">
+    {% if steps %}
+      <a class="btn ghost" id="image-link" href="{{ url_for('step_image', set_id=set_id, shop=shop, step=current) }}"
+         data-href="{{ url_for('step_image', set_id=set_id, shop=shop, step=0) }}" download>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        Image étape <span data-bind="step">{{ current }}</span>
+      </a>
+    {% endif %}
+    {% if is_admin %}
+      <a class="btn primary" href="{{ url_for('import_step', set_id=set_id, shop=shop) }}">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        Importer une étape
+      </a>
+    {% endif %}
+  </div>
+</header>
+
+{% if not steps %}
+  <div class="empty">
+    <p class="empty-title">La saison n'a pas encore commencé</p>
+    <p class="muted">Aucune étape enregistrée pour cette ligue.</p>
+    {% if is_admin %}<a class="btn primary" href="{{ url_for('import_step', set_id=set_id, shop=shop) }}">Importer la première étape</a>{% endif %}
+  </div>
+{% else %}
+
+<section class="timeline" aria-label="Choix de l'étape">
+  <div class="timeline-head">
+    <button class="btn square" id="play" type="button" aria-label="Rejouer la saison" title="Rejouer la saison">
+      <svg class="i-play" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>
+      <svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+    </button>
+    <p class="timeline-title">Étape <b data-bind="step">{{ current }}</b> / {{ NUM_STEPS }}</p>
+  </div>
+  <div class="slider-wrap">
+    <input type="range" id="step-slider" min="1" max="{{ NUM_STEPS }}" step="0.01" value="{{ current }}"
+           aria-label="Étape" aria-valuetext="Étape {{ current }} sur {{ NUM_STEPS }}">
+    <div class="ticks" id="ticks">
+      {% for s in range(1, NUM_STEPS + 1) %}
+        <button type="button" data-step="{{ s }}" {% if s not in steps %}disabled{% endif %} tabindex="-1">E{{ s }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-live="polite">
+  <article class="stat stat-leader">
+    <p class="stat-label">En tête</p>
+    <p class="stat-value swap" data-bind="leader">—</p>
+    <p class="stat-sub" data-bind="leader-sub"></p>
+  </article>
+  <article class="stat">
+    <p class="stat-label">Meilleure remontée</p>
+    <p class="stat-value swap" data-bind="climber">—</p>
+    <p class="stat-sub" data-bind="climber-sub"></p>
+  </article>
+  <article class="stat">
+    <p class="stat-label">Top score de l'étape</p>
+    <p class="stat-value swap" data-bind="top">—</p>
+    <p class="stat-sub" data-bind="top-sub"></p>
+  </article>
+  <article class="stat">
+    <p class="stat-label">Participants</p>
+    <p class="stat-value swap" data-bind="players">—</p>
+    <p class="stat-sub" data-bind="players-sub"></p>
+  </article>
+</section>
+
+<div class="columns">
+  <section class="panel board" aria-labelledby="board-title">
+    <h2 class="panel-title" id="board-title">Classement général</h2>
+    <div class="panel-tools">
+      <label class="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input type="search" id="player-search" placeholder="Suivre un joueur…" list="board-players" autocomplete="off" aria-label="Suivre un joueur">
+        <datalist id="board-players"></datalist>
+      </label>
+    </div>
+    <div class="lb-header" aria-hidden="true">
+      <span class="c-rank">#</span><span class="c-move"></span><span class="c-name">Joueur</span>
+      <span class="c-steps">{% for s in range(1, NUM_STEPS + 1) %}<span data-col="{{ s }}">E{{ s }}</span>{% endfor %}</span>
+      <span class="c-total">TOTAL</span><span class="c-diff"></span>
+    </div>
+    <ol class="lb" id="leaderboard" aria-label="Classement"></ol>
+    <p class="foot" data-bind="board-foot"></p>
+    <noscript><p class="muted">Activez JavaScript pour afficher le classement animé.</p></noscript>
+  </section>
+
+  <section class="panel detail" aria-labelledby="detail-title">
+    <h2 class="panel-title" id="detail-title">Étape <span data-bind="step">{{ current }}</span> / {{ NUM_STEPS }}</h2>
+    <div class="panel-tools">
+      <a id="source-link" href="#" target="_blank" rel="noopener" hidden>Voir sur melee.gg ↗</a>
+      {% if is_admin %}
+        <form method="post" id="delete-form" class="inline"
+              action="{{ url_for('delete_step_view', set_id=set_id, shop=shop, step=current) }}"
+              data-action="{{ url_for('delete_step_view', set_id=set_id, shop=shop, step=0) }}">
+          <button class="btn danger small">Supprimer l'étape</button>
+        </form>
+      {% endif %}
+    </div>
+    <div class="scroll">
+      <table class="results">
+        <thead>
+          <tr>
+            <th class="num">#</th><th>Joueur</th>
+            <th class="num col-vdn">V</th><th class="num col-vdn">D</th><th class="num col-vdn">N</th>
+            <th class="num">Particip.</th><th class="num">Victoires</th><th class="num">Parties</th>
+            <th class="num">Recrutem.</th><th class="num">TOTAL</th>
+          </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+      </table>
+    </div>
+    <p class="foot" data-bind="detail-foot"></p>
+  </section>
+</div>
+
+<script type="application/json" id="season-data">{{ season | tojson }}</script>
+<script src="{{ url_for('static', filename='league.js') }}" defer></script>
+{% endif %}
+
+<section class="panel" id="recrutement" aria-labelledby="recrut-title">
+  <h2 class="panel-title" id="recrut-title">Recrutement <small>+5 pts au recruteur quand la recrue atteint {{ SEUIL_RECRUTEMENT }} pts</small></h2>
+  {% if recruitments %}
+  <ul class="recruits">
+    {% for r in recruitments %}
+    <li class="recruit">
+      <div class="recruit-names">
+        <span class="player" style="--c: {{ player_color(r.recrue) }}">{{ r.recrue }}</span>
+        <span class="muted">recruté·e par</span>
+        <span class="player" style="--c: {{ player_color(r.recruteur) }}">{{ r.recruteur }}</span>
+      </div>
+      <div class="meter" role="meter" aria-valuemin="0" aria-valuemax="{{ SEUIL_RECRUTEMENT }}" aria-valuenow="{{ [r.points, SEUIL_RECRUTEMENT]|min }}"
+           aria-label="Points de {{ r.recrue }}" style="--v: {{ ([r.points, SEUIL_RECRUTEMENT]|min) / SEUIL_RECRUTEMENT }}">
+        <span></span>
+      </div>
+      <div class="recruit-status">
+        {% if r.bonus_step %}<span class="chip up">✓ +5 à l'étape {{ r.bonus_step }}</span>
+        {% else %}<span class="chip">{{ r.points }}/{{ SEUIL_RECRUTEMENT }} pts</span>{% endif %}
+        {% if is_admin %}
+          <form method="post" action="{{ url_for('delete_recruitment', set_id=set_id, shop=shop) }}" class="inline">
+            <input type="hidden" name="recrue" value="{{ r.recrue }}">
+            <button class="icon-btn" aria-label="Retirer le recrutement de {{ r.recrue }}" title="Retirer">×</button>
+          </form>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p class="foot">Aucun recrutement enregistré.</p>
+  {% endif %}
+
+  {% if is_admin %}
+  <form method="post" action="{{ url_for('add_recruitment', set_id=set_id, shop=shop) }}" class="row-form">
+    <label>Recrue <input name="recrue" list="players" required autocomplete="off"></label>
+    <label>Recruteur <input name="recruteur" list="players" required autocomplete="off"></label>
+    <button class="btn">Ajouter</button>
+    <datalist id="players">{% for p in players %}<option value="{{ p }}">{% endfor %}</datalist>
+  </form>
+  {% endif %}
+</section>
+{% endblock %}

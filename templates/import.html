@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Importer une étape — {{ SHOPS[shop] }}{% endblock %}
+{% block nav %}
+  <a href="{{ url_for('shop_view', set_id=set_id, shop=shop) }}">← {{ SHOPS[shop] }}</a>
+{% endblock %}
+{% block content %}
+<header class="hero">
+  <div>
+    <p class="eyebrow">{{ SHOPS[shop] }} · {{ SETS[set_id] }}</p>
+    <h1>Importer une étape</h1>
+  </div>
+</header>
+
+<form method="post" class="form-panel import-form">
+  <input type="hidden" name="action" value="preview">
+  <label class="block">
+    Lien du tournoi melee.gg
+    <input type="url" name="url" value="{{ form.url }}" placeholder="https://melee.gg/Tournament/View/123456" autofocus>
+  </label>
+
+  <details {% if form.paste and not form.url %}open{% endif %}>
+    <summary>…ou coller le classement copié depuis melee.gg</summary>
+    <textarea name="paste" rows="8" placeholder="Rang&#9;Joueur&#9;Score…">{{ form.paste }}</textarea>
+  </details>
+
+  <div class="row-form">
+    <label>Étape
+      <select name="step">
+        {% for s in range(1, NUM_STEPS + 1) %}
+          <option value="{{ s }}" {% if s == form.step %}selected{% endif %}>Étape {{ s }}{% if s in steps %} (remplace l'existante){% endif %}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" name="forfait" {% if form.forfait %}checked{% endif %}> Jeu libre (11 pts forfait)</label>
+    <button class="btn primary">Prévisualiser</button>
+  </div>
+</form>
+
+{% if preview %}
+<form method="post" class="panel">
+  <input type="hidden" name="action" value="save">
+  <input type="hidden" name="url" value="{{ form.url }}">
+  <input type="hidden" name="step" value="{{ form.step }}">
+  <input type="hidden" name="source" value="{{ source or '' }}">
+  {% if form.forfait %}<input type="hidden" name="forfait" value="on">{% endif %}
+
+  <h2 class="panel-title">Aperçu — étape {{ form.step }}
+    {% if tournament %}<small><a href="{{ tournament.url }}" target="_blank" rel="noopener">{{ tournament.name }}</a> · {{ tournament.round }}</small>{% endif %}
+  </h2>
+  {% if form.step in steps %}
+    <p class="flash flash-error">L'étape {{ form.step }} existe déjà : elle sera remplacée.</p>
+  {% endif %}
+  <p class="muted">Corrigez un pseudo si besoin, décochez les joueurs à exclure. Les joueurs marqués <span class="badge">nouveau</span> n'ont encore joué aucune étape de cette ligue — vérifiez qu'il ne s'agit pas d'un changement de pseudo.</p>
+
+  <div class="scroll">
+    <table class="preview">
+      <thead><tr><th></th><th>Joueur</th><th class="num">V</th><th class="num">D</th><th class="num">N</th><th class="num">Pts</th></tr></thead>
+      <tbody>
+        {% for r in preview %}
+        <tr>
+          <td><input type="checkbox" name="keep" value="{{ loop.index0 }}" checked aria-label="Inclure {{ r.joueur }}"></td>
+          <td>
+            <input name="joueur-{{ loop.index0 }}" value="{{ r.joueur }}" class="name" aria-label="Pseudo">
+            {% if r.canon != r.joueur %}<span class="muted">→ {{ r.canon }}</span>{% endif %}
+            {% if not r.known %}<span class="badge">nouveau</span>{% endif %}
+          </td>
+          <td class="num"><input type="number" min="0" name="victoires-{{ loop.index0 }}" value="{{ r.victoires }}" aria-label="Victoires"></td>
+          <td class="num"><input type="number" min="0" name="defaites-{{ loop.index0 }}" value="{{ r.defaites }}" aria-label="Défaites"></td>
+          <td class="num"><input type="number" min="0" name="nuls-{{ loop.index0 }}" value="{{ r.nuls }}" aria-label="Nuls"></td>
+          <td class="num total">{{ r.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="row-form end">
+    <button class="btn primary">Enregistrer l'étape {{ form.step }} ({{ preview|length }} joueurs)</button>
+  </div>
+</form>
+{% endif %}
+{% endblock %}

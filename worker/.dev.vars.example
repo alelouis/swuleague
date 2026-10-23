@@ -1,0 +1,4 @@
+# Copier en .dev.vars pour le développement local (jamais commité)
+DISCORD_CLIENT_SECRET=
+# Connexion sans Discord en local uniquement (ignorée hors localhost)
+DEV_LOGIN=1

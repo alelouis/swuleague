@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Gestion des ligues — Ligues SWU{% endblock %}
+{% block content %}
+<header class="hero">
+  <p class="eyebrow">Administration</p>
+  <h1>Gestion des ligues</h1>
+</header>
+
+<div class="columns">
+  <section class="panel" aria-labelledby="sets-title">
+    <h2 class="panel-title" id="sets-title">Sets <small>Le set en cours est celui affiché par défaut et utilisé par la génération d'images.</small></h2>
+    <table class="manage">
+      <thead><tr><th>Nom</th><th>Identifiant</th><th class="num">Étapes</th><th></th></tr></thead>
+      <tbody>
+        {% for sid, label in SETS.items() %}
+        <tr {% if sid == CURRENT_SET %}class="is-current"{% endif %}>
+          <td>
+            <form method="post" action="{{ url_for('rename_view', kind='set', slug=sid) }}" class="rename">
+              <input name="name" value="{{ label }}" required aria-label="Nom du set {{ sid }}">
+              <button class="btn small" title="Renommer">OK</button>
+            </form>
+          </td>
+          <td class="dim">{{ sid }}</td>
+          <td class="num">{{ stats[sid].values()|sum }}</td>
+          <td class="num">
+            {% if sid == CURRENT_SET %}
+              <span class="tag">EN COURS</span>
+            {% else %}
+              <form method="post" action="{{ url_for('set_current_view', slug=sid) }}" class="inline">
+                <button class="btn small">Définir en cours</button>
+              </form>
+            {% endif %}
+            <a href="{{ url_for('set_view', set_id=sid) }}" class="go-link">Voir →</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <form method="post" action="{{ url_for('add_set_view') }}" class="form-panel add-form" data-slugify>
+      <h3>Nouveau set</h3>
+      <div class="row-form">
+        <label>Nom <input name="name" required placeholder="Set 8" autocomplete="off"></label>
+        <label>Identifiant <input name="slug" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="set-8" autocomplete="off"></label>
+      </div>
+      <div class="row-form">
+        <label class="check"><input type="checkbox" name="current" checked> Définir comme set en cours</label>
+        <button class="btn primary">Créer le set</button>
+      </div>
+      <p class="hint">Toutes les boutiques démarrent une nouvelle ligue vide pour ce set (étapes et recrutement repartent de zéro).</p>
+    </form>
+  </section>
+
+  <section class="panel" aria-labelledby="shops-title">
+    <h2 class="panel-title" id="shops-title">Boutiques <small>Étapes jouées dans {{ SETS[CURRENT_SET] }}</small></h2>
+    <table class="manage">
+      <thead><tr><th>Nom</th><th>Identifiant</th><th class="num">Étapes</th><th></th></tr></thead>
+      <tbody>
+        {% for slug, label in SHOPS.items() %}
+        <tr>
+          <td>
+            <form method="post" action="{{ url_for('rename_view', kind='shop', slug=slug) }}" class="rename">
+              <input name="name" value="{{ label }}" required aria-label="Nom de la boutique {{ slug }}">
+              <button class="btn small" title="Renommer">OK</button>
+            </form>
+          </td>
+          <td class="dim">{{ slug }}</td>
+          <td class="num">{{ stats[CURRENT_SET][slug] }}/{{ NUM_STEPS }}</td>
+          <td class="num"><a href="{{ url_for('shop_view', set_id=CURRENT_SET, shop=slug) }}" class="go-link">Voir →</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <form method="post" action="{{ url_for('add_shop_view') }}" class="form-panel add-form" data-slugify>
+      <h3>Nouvelle boutique</h3>
+      <div class="row-form">
+        <label>Nom <input name="name" required placeholder="Ma Boutique Toulouse" autocomplete="off"></label>
+        <label>Identifiant <input name="slug" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="ma-boutique-toulouse" autocomplete="off"></label>
+        <button class="btn primary">Ajouter</button>
+      </div>
+      <p class="hint">L'identifiant sert dans les liens et les noms de dossiers (<code>data/&lt;set&gt;/&lt;identifiant&gt;/</code>) ; il est déduit du nom si vous le laissez vide et ne peut plus changer ensuite.</p>
+    </form>
+  </section>
+</div>
+
+<script>
+  // Aperçu de l'identifiant déduit du nom (même règle que data.slugify)
+  for (const form of document.querySelectorAll("[data-slugify]")) {
+    const name = form.elements.name, slug = form.elements.slug;
+    name.addEventListener("input", () => {
+      slug.placeholder = name.value.normalize("NFKD").replace(/[̀-ͯ]/g, "")
+        .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || slug.defaultValue;
+    });
+  }
+</script>
+{% endblock %}

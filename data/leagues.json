@@ -1,0 +1,13 @@
+{
+  "current_set": "set-9",
+  "sets": {
+    "set-7": "Set 7",
+    "set-9": "Set 9"
+  },
+  "shops": {
+    "all4play": "All4Play",
+    "cercle-du-jeu": "Le Cercle du Jeu",
+    "sortileges-perpignan": "Sortilèges Perpignan",
+    "test": "Boutique Test"
+  }
+}

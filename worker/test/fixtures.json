@@ -1,0 +1,7330 @@
+[
+ {
+  "set": "set-7",
+  "shop": "all4play",
+  "data": {
+   "steps": [
+    {
+     "step": 1,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "CrYad",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Eivro",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Fireshow",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Dracos",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Wiknuw",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "fuego1131",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "elasund31",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "hugues3485",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Darkus",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 2,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "CrYad",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Quanchin83",
+       "victoires": 1,
+       "defaites": 1,
+       "nuls": 1,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Wiknuw",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 0,
+       "defaites": 2,
+       "nuls": 1,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Darkus",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 3,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Darkus",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Eivro",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Fireshow",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Wiknuw",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "fuego1131",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "CrYad",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 4,
+     "forfait": true,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Darkus",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Fireshow",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Eivro",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "fuego1131",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "CrYad",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Quanchin83",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Gae7",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 5,
+     "forfait": true,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Wiknuw",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Darkus",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "CrYad",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Eivro",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Quanchin83",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "TLE",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Jean-Lou",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "fuego1131",
+       "victoires": 0,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 6,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "CrYad",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Eivro",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "elasund31",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Kent0010",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Piscouman",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    }
+   ],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "snapshots": {
+     "1": {
+      "rows": [
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 1,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "CrYad",
+        "rank": 2,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 3,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 4,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 5,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 6,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 7,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 8,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 9,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 10,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 11,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 12,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 13,
+        "total": 5,
+        "diff": 5,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 5
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 39,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_Eivro",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "CrYad",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Dracos",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Fireshow",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Wiknuw",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "elasund31",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "fuego1131",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Darkus",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "hugues3485",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "2": {
+      "rows": [
+       {
+        "joueur": "CrYad",
+        "rank": 1,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 2,
+        "total": 16,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 6,
+        "par_etape": {
+         "1": 7,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 3,
+        "total": 16,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 7,
+        "par_etape": {
+         "1": 7,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 4,
+        "total": 16,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 7
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 5,
+        "total": 14,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 8,
+        "par_etape": {
+         "1": 5,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 6,
+        "total": 12,
+        "diff": 5,
+        "etapes": 2,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "1": 7,
+         "2": 5
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 7,
+        "total": 12,
+        "diff": 5,
+        "etapes": 2,
+        "move": "up",
+        "delta": 5,
+        "par_etape": {
+         "1": 7,
+         "2": 5
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 8,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 7,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 9,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 6,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 10,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 6,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 11,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 5,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 12,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 5,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 13,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 7
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 14,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 24,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "CrYad",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Quanchin83",
+         "v": 1,
+         "d": 1,
+         "n": 1,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Wiknuw",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Darkus",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        },
+        {
+         "joueur": "missnobody",
+         "v": 0,
+         "d": 2,
+         "n": 1,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "3": {
+      "rows": [
+       {
+        "joueur": "CrYad",
+        "rank": 1,
+        "total": 29,
+        "diff": 7,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 2,
+        "total": 27,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 3,
+        "total": 23,
+        "diff": 7,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 4,
+        "total": 23,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 5,
+        "total": 23,
+        "diff": 7,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 6,
+        "total": 21,
+        "diff": 7,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 7,
+        "total": 20,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 8,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 9,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 9,
+        "total": 17,
+        "diff": 5,
+        "etapes": 3,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 5
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 10,
+        "total": 16,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 11,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 12,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 13,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 7
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 14,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 30,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Darkus",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Eivro",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Fireshow",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "CrYad",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Wiknuw",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "fuego1131",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "4": {
+      "rows": [
+       {
+        "joueur": "CrYad",
+        "rank": 1,
+        "total": 40,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 7,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 2,
+        "total": 38,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 3,
+        "total": 34,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 7,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 4,
+        "total": 34,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 5,
+        "total": 31,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "3": 9,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 6,
+        "total": 29,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 9,
+         "3": 9,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 7,
+        "total": 28,
+        "diff": 11,
+        "etapes": 4,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 5,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 8,
+        "total": 27,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 9,
+         "3": 7,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 9,
+        "total": 23,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 4,
+        "par_etape": {
+         "1": 9,
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 10,
+        "total": 21,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 4,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 11,
+        "total": 18,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "2": 7,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Gae7",
+        "rank": 12,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 13,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 14,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 15,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": true,
+       "parties": 30,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_Eivro",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "CrYad",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Darkus",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Fireshow",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "fuego1131",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Gae7",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "missnobody",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Quanchin83",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        }
+       ]
+      }
+     },
+     "5": {
+      "rows": [
+       {
+        "joueur": "CrYad",
+        "rank": 1,
+        "total": 51,
+        "diff": 11,
+        "etapes": 5,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 7,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 2,
+        "total": 49,
+        "diff": 11,
+        "etapes": 5,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 11,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 3,
+        "total": 45,
+        "diff": 11,
+        "etapes": 5,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 11,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 4,
+        "total": 42,
+        "diff": 11,
+        "etapes": 4,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "3": 9,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 5,
+        "total": 39,
+        "diff": 11,
+        "etapes": 5,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 5,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 6,
+        "total": 38,
+        "diff": 11,
+        "etapes": 4,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 9,
+         "3": 7,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 7,
+        "total": 34,
+        "diff": 0,
+        "etapes": 4,
+        "move": "down",
+        "delta": 4,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 7,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 8,
+        "total": 34,
+        "diff": 11,
+        "etapes": 4,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 7,
+         "3": 7,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 9,
+        "total": 29,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 9,
+         "3": 9,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 10,
+        "total": 29,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 11,
+        "total": 21,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 12,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Gae7",
+        "rank": 13,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Jean-Lou",
+        "rank": 14,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "5": 11
+        }
+       },
+       {
+        "joueur": "TLE",
+        "rank": 15,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 16,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 17,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 18,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": true,
+       "parties": 0,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_Eivro",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "CrYad",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Darkus",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Ecto",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "fuego1131",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Jean-Lou",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "missnobody",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Quanchin83",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "TLE",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Wiknuw",
+         "v": 0,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        }
+       ]
+      }
+     },
+     "6": {
+      "rows": [
+       {
+        "joueur": "CrYad",
+        "rank": 1,
+        "total": 62,
+        "diff": 11,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 7,
+         "4": 11,
+         "5": 11,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "Piscouman",
+        "rank": 2,
+        "total": 54,
+        "diff": 5,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 11,
+         "4": 11,
+         "5": 11,
+         "6": 5
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 3,
+        "total": 51,
+        "diff": 9,
+        "etapes": 5,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "3": 9,
+         "4": 11,
+         "5": 11,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 4,
+        "total": 46,
+        "diff": 7,
+        "etapes": 6,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 5,
+         "4": 11,
+         "5": 11,
+         "6": 7
+        }
+       },
+       {
+        "joueur": "Darkus",
+        "rank": 5,
+        "total": 45,
+        "diff": 0,
+        "etapes": 5,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 5,
+         "3": 11,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 6,
+        "total": 43,
+        "diff": 9,
+        "etapes": 5,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 9,
+         "3": 7,
+         "4": 11,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "fuego1131",
+        "rank": 7,
+        "total": 38,
+        "diff": 0,
+        "etapes": 4,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "3": 7,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Wiknuw",
+        "rank": 8,
+        "total": 34,
+        "diff": 0,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 7,
+         "3": 7,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "Fireshow",
+        "rank": 9,
+        "total": 29,
+        "diff": 0,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "3": 9,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 10,
+        "total": 29,
+        "diff": 0,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 7,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 11,
+        "total": 21,
+        "diff": 0,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 12,
+        "total": 18,
+        "diff": 7,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "5": 11,
+         "6": 7
+        }
+       },
+       {
+        "joueur": "elasund31",
+        "rank": 13,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 4,
+        "par_etape": {
+         "1": 9,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "Gae7",
+        "rank": 14,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Jean-Lou",
+        "rank": 15,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "5": 11
+        }
+       },
+       {
+        "joueur": "TLE",
+        "rank": 16,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 17,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 18,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "6": 7
+        }
+       },
+       {
+        "joueur": "hugues3485",
+        "rank": 19,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 24,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "CrYad",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Eivro",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "elasund31",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Ecto",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Kent0010",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Piscouman",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     }
+    },
+    "colors": {
+     "ADB_Dracos": "#00b894",
+     "ADB_Eivro": "#9b59b6",
+     "ADB_Samyfit": "#a29bfe",
+     "Barathrum": "#a29bfe",
+     "CrYad": "#00cec9",
+     "Darkus": "#d63031",
+     "Ecto": "#00b894",
+     "elasund31": "#f39c12",
+     "Fireshow": "#74b9ff",
+     "fuego1131": "#e67e22",
+     "Gae7": "#e74c3c",
+     "hugues3485": "#b2bec3",
+     "Jean-Lou": "#ffeaa7",
+     "Kent0010": "#55efc4",
+     "missnobody": "#9b59b6",
+     "Piscouman": "#f39c12",
+     "Quanchin83": "#fdcb6e",
+     "TLE": "#00cec9",
+     "Wiknuw": "#9b59b6"
+    }
+   },
+   "recruitments": [],
+   "top": [
+    {
+     "joueur": "CrYad",
+     "total": 62
+    },
+    {
+     "joueur": "Piscouman",
+     "total": 54
+    },
+    {
+     "joueur": "ADB_Eivro",
+     "total": 51
+    }
+   ]
+  }
+ },
+ {
+  "set": "set-7",
+  "shop": "cercle-du-jeu",
+  "data": {
+   "steps": [
+    {
+     "step": 1,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Eivro",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ValKiddo",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "cbourges",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Djexdje",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 2,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Cion",
+       "victoires": 4,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 4,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "TLE84",
+       "victoires": 4,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Dracos",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Quanchin83",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "cbourges",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "MRG31",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Kent0010",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Djexdje",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Nerraw",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "TheHolyBob",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ThibLaFrite",
+       "victoires": 0,
+       "defaites": 5,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 3,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Barathrum",
+       "victoires": 4,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Djexdje",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Dracos",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Eivro",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Cion",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "MRG31",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "le_Schtroumpf",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "cbourges",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "TheHolyBob",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Kent0010",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ThibLaFrite",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Pololufi",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Nerraw",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 4,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "ADB_Dracos",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Eivro",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 3,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "le_Schtroumpf",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Kent0010",
+       "victoires": 2,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "cbourges",
+       "victoires": 1,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 5,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ValKiddo",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Djexdje",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 6,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "TLE84",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bazouzou",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Cion",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Ecto",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_RemiWanKenobi",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "glorf",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Samyfit",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Barathrum",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ADB_Dracos",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ValKiddo",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 1,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Durritos",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "missnobody",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "MRG31",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Brataux",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 1,
+       "recrutement": 0
+      }
+     ]
+    }
+   ],
+   "recruitments": [
+    [
+     "TheHolyBob",
+     "ADB_RemiWanKenobi"
+    ],
+    [
+     "Nerraw",
+     "ADB_RemiWanKenobi"
+    ],
+    [
+     "ThibLaFrite",
+     "ADB_RemiWanKenobi"
+    ],
+    [
+     "Pololufi",
+     "ADB_RemiWanKenobi"
+    ],
+    [
+     "le_Schtroumpf",
+     "Ecto"
+    ]
+   ],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "snapshots": {
+     "1": {
+      "rows": [
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 1,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 2,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 3,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "Bazouzou",
+        "rank": 4,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 5,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 6,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 7,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 8,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 9,
+        "total": 5,
+        "diff": 5,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 5
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 34,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_Eivro",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Brataux",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ValKiddo",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "cbourges",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Djexdje",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "2": {
+      "rows": [
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 1,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Bazouzou",
+        "rank": 2,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "2": 11
+        }
+       },
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 3,
+        "total": 20,
+        "diff": 9,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 4,
+        "total": 20,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "1": 9,
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 5,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 6,
+        "total": 14,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 7
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 7,
+        "total": 14,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 5,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 8,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 9,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 8,
+        "par_etape": {
+         "1": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 10,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Cion",
+        "rank": 11,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 12,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 13,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "TLE84",
+        "rank": 14,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 15,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "MRG31",
+        "rank": 16,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 17,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 11,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Nerraw",
+        "rank": 18,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 7
+        }
+       },
+       {
+        "joueur": "TheHolyBob",
+        "rank": 19,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 7
+        }
+       },
+       {
+        "joueur": "ThibLaFrite",
+        "rank": 20,
+        "total": 5,
+        "diff": 5,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 5
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 85,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 4,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Cion",
+         "v": 4,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "TLE84",
+         "v": 4,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Dracos",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Ecto",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Quanchin83",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "cbourges",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Brataux",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Kent0010",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "MRG31",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "missnobody",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Djexdje",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Nerraw",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "TheHolyBob",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "ThibLaFrite",
+         "v": 0,
+         "d": 5,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "3": {
+      "rows": [
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 1,
+        "total": 36,
+        "diff": 16,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "2": 9,
+         "3": 16
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 2,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Bazouzou",
+        "rank": 3,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 4,
+        "total": 29,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 9,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 5,
+        "total": 29,
+        "diff": 9,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 11,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 6,
+        "total": 25,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 7,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 7,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 8,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 9,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 10,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "2": 11,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 11,
+        "total": 21,
+        "diff": 7,
+        "etapes": 3,
+        "move": "down",
+        "delta": 4,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Cion",
+        "rank": 12,
+        "total": 20,
+        "diff": 9,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "MRG31",
+        "rank": 13,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "2": 9,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 14,
+        "total": 16,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "TheHolyBob",
+        "rank": 15,
+        "total": 16,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 4,
+        "par_etape": {
+         "2": 7,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Nerraw",
+        "rank": 16,
+        "total": 14,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ThibLaFrite",
+        "rank": 17,
+        "total": 12,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "2": 5,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 18,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 5,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "TLE84",
+        "rank": 19,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 5,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 20,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "le_Schtroumpf",
+        "rank": 21,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Pololufi",
+        "rank": 22,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 82,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 5,
+         "total": 16
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 4,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Dracos",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Eivro",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Brataux",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Djexdje",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Ecto",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Cion",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "MRG31",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "TheHolyBob",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "cbourges",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "le_Schtroumpf",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Kent0010",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Nerraw",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Pololufi",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "ThibLaFrite",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "4": {
+      "rows": [
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 1,
+        "total": 47,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 9,
+         "3": 16,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 2,
+        "total": 44,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Bazouzou",
+        "rank": 3,
+        "total": 44,
+        "diff": 11,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 4,
+        "total": 36,
+        "diff": 7,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 9,
+         "3": 11,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 5,
+        "total": 36,
+        "diff": 7,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 11,
+         "3": 9,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 6,
+        "total": 36,
+        "diff": 14,
+        "etapes": 3,
+        "move": "up",
+        "delta": 4,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 14
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 7,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 8,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 9,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 10,
+        "total": 28,
+        "diff": 7,
+        "etapes": 4,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 11,
+        "total": 25,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 5,
+        "par_etape": {
+         "1": 7,
+         "2": 7,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 12,
+        "total": 25,
+        "diff": 9,
+        "etapes": 3,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "2": 9,
+         "3": 7,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "Cion",
+        "rank": 13,
+        "total": 20,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "MRG31",
+        "rank": 14,
+        "total": 18,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 9,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "le_Schtroumpf",
+        "rank": 15,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 6,
+        "par_etape": {
+         "3": 9,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "TheHolyBob",
+        "rank": 16,
+        "total": 16,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Nerraw",
+        "rank": 17,
+        "total": 14,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ThibLaFrite",
+        "rank": 18,
+        "total": 12,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 5,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 19,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "TLE84",
+        "rank": 20,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 21,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Pololufi",
+        "rank": 22,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 54,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Ecto",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 5,
+         "total": 14
+        },
+        {
+         "joueur": "ADB_Dracos",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Eivro",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Kent0010",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "le_Schtroumpf",
+         "v": 2,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Brataux",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "cbourges",
+         "v": 1,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "5": {
+      "rows": [
+       {
+        "joueur": "Bazouzou",
+        "rank": 1,
+        "total": 55,
+        "diff": 11,
+        "etapes": 5,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 2,
+        "total": 54,
+        "diff": 7,
+        "etapes": 5,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 9,
+         "3": 16,
+         "4": 11,
+         "5": 7
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 3,
+        "total": 51,
+        "diff": 7,
+        "etapes": 5,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "5": 7
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 4,
+        "total": 45,
+        "diff": 9,
+        "etapes": 5,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 9,
+         "3": 11,
+         "4": 7,
+         "5": 9
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 5,
+        "total": 36,
+        "diff": 0,
+        "etapes": 4,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 11,
+         "3": 9,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 6,
+        "total": 36,
+        "diff": 0,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 14
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 7,
+        "total": 35,
+        "diff": 7,
+        "etapes": 5,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7,
+         "4": 7,
+         "5": 7
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 8,
+        "total": 34,
+        "diff": 9,
+        "etapes": 4,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "1": 7,
+         "2": 7,
+         "3": 11,
+         "5": 9
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 9,
+        "total": 33,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 10,
+        "total": 33,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 11,
+        "total": 33,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 12,
+        "total": 25,
+        "diff": 0,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 9,
+         "3": 7,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "Cion",
+        "rank": 13,
+        "total": 20,
+        "diff": 0,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 11,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "MRG31",
+        "rank": 14,
+        "total": 18,
+        "diff": 0,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 9,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 15,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 6,
+        "par_etape": {
+         "1": 9,
+         "5": 9
+        }
+       },
+       {
+        "joueur": "le_Schtroumpf",
+        "rank": 16,
+        "total": 18,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "3": 9,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "TheHolyBob",
+        "rank": 17,
+        "total": 16,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Nerraw",
+        "rank": 18,
+        "total": 14,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ThibLaFrite",
+        "rank": 19,
+        "total": 12,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 5,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 20,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "TLE84",
+        "rank": 21,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Pololufi",
+        "rank": 22,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 21,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Brataux",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Djexdje",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ValKiddo",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "6": {
+      "rows": [
+       {
+        "joueur": "Bazouzou",
+        "rank": 1,
+        "total": 66,
+        "diff": 11,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "5": 11,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "ADB_RemiWanKenobi",
+        "rank": 2,
+        "total": 65,
+        "diff": 11,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 9,
+         "3": 16,
+         "4": 11,
+         "5": 7,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "ADB_Samyfit",
+        "rank": 3,
+        "total": 60,
+        "diff": 9,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 11,
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "5": 7,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "Brataux",
+        "rank": 4,
+        "total": 50,
+        "diff": 5,
+        "etapes": 6,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 9,
+         "3": 11,
+         "4": 7,
+         "5": 9,
+         "6": 5
+        }
+       },
+       {
+        "joueur": "Ecto",
+        "rank": 5,
+        "total": 47,
+        "diff": 11,
+        "etapes": 4,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 14,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "missnobody",
+        "rank": 6,
+        "total": 42,
+        "diff": 7,
+        "etapes": 6,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 5,
+         "2": 9,
+         "3": 7,
+         "4": 7,
+         "5": 7,
+         "6": 7
+        }
+       },
+       {
+        "joueur": "ADB_Dracos",
+        "rank": 7,
+        "total": 42,
+        "diff": 9,
+        "etapes": 4,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "Barathrum",
+        "rank": 8,
+        "total": 42,
+        "diff": 9,
+        "etapes": 4,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "2": 11,
+         "3": 11,
+         "4": 11,
+         "6": 9
+        }
+       },
+       {
+        "joueur": "cbourges",
+        "rank": 9,
+        "total": 36,
+        "diff": 0,
+        "etapes": 4,
+        "move": "down",
+        "delta": 4,
+        "par_etape": {
+         "1": 9,
+         "2": 11,
+         "3": 9,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "Djexdje",
+        "rank": 10,
+        "total": 34,
+        "diff": 0,
+        "etapes": 4,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 7,
+         "2": 7,
+         "3": 11,
+         "5": 9
+        }
+       },
+       {
+        "joueur": "ADB_Eivro",
+        "rank": 11,
+        "total": 33,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 11,
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Cion",
+        "rank": 12,
+        "total": 31,
+        "diff": 11,
+        "etapes": 3,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 11,
+         "3": 9,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "Kent0010",
+        "rank": 13,
+        "total": 25,
+        "diff": 0,
+        "etapes": 3,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 9,
+         "3": 7,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "MRG31",
+        "rank": 14,
+        "total": 25,
+        "diff": 7,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "2": 9,
+         "3": 9,
+         "6": 7
+        }
+       },
+       {
+        "joueur": "ValKiddo",
+        "rank": 15,
+        "total": 25,
+        "diff": 7,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "5": 9,
+         "6": 7
+        }
+       },
+       {
+        "joueur": "TLE84",
+        "rank": 16,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 5,
+        "par_etape": {
+         "2": 11,
+         "6": 11
+        }
+       },
+       {
+        "joueur": "le_Schtroumpf",
+        "rank": 17,
+        "total": 18,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "3": 9,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "TheHolyBob",
+        "rank": 18,
+        "total": 16,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Nerraw",
+        "rank": 19,
+        "total": 14,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 7,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "ThibLaFrite",
+        "rank": 20,
+        "total": 12,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 5,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Quanchin83",
+        "rank": 21,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "2": 11
+        }
+       },
+       {
+        "joueur": "glorf",
+        "rank": 22,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "6": 9
+        }
+       },
+       {
+        "joueur": "Durritos",
+        "rank": 23,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "6": 7
+        }
+       },
+       {
+        "joueur": "Pololufi",
+        "rank": 24,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 55,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ADB_RemiWanKenobi",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bazouzou",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Cion",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Ecto",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "TLE84",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "ADB_Dracos",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ADB_Samyfit",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Barathrum",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "glorf",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Durritos",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "MRG31",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "ValKiddo",
+         "v": 1,
+         "d": 2,
+         "n": 1,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "missnobody",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Brataux",
+         "v": 0,
+         "d": 3,
+         "n": 1,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     }
+    },
+    "colors": {
+     "ADB_Dracos": "#00b894",
+     "ADB_Eivro": "#9b59b6",
+     "ADB_RemiWanKenobi": "#ffeaa7",
+     "ADB_Samyfit": "#a29bfe",
+     "Barathrum": "#a29bfe",
+     "Bazouzou": "#ffeaa7",
+     "Brataux": "#ffeaa7",
+     "cbourges": "#a29bfe",
+     "Cion": "#d63031",
+     "Djexdje": "#1abc9c",
+     "Durritos": "#d63031",
+     "Ecto": "#00b894",
+     "glorf": "#00b894",
+     "Kent0010": "#55efc4",
+     "le_Schtroumpf": "#00b894",
+     "missnobody": "#9b59b6",
+     "MRG31": "#74b9ff",
+     "Nerraw": "#d63031",
+     "Pololufi": "#00cec9",
+     "Quanchin83": "#fdcb6e",
+     "TheHolyBob": "#55efc4",
+     "ThibLaFrite": "#6c5ce7",
+     "TLE84": "#3498db",
+     "ValKiddo": "#3498db"
+    }
+   },
+   "recruitments": [
+    {
+     "recrue": "le_Schtroumpf",
+     "recruteur": "Ecto",
+     "points": 18,
+     "bonus_step": 4
+    },
+    {
+     "recrue": "Nerraw",
+     "recruteur": "ADB_RemiWanKenobi",
+     "points": 14,
+     "bonus_step": null
+    },
+    {
+     "recrue": "Pololufi",
+     "recruteur": "ADB_RemiWanKenobi",
+     "points": 7,
+     "bonus_step": null
+    },
+    {
+     "recrue": "TheHolyBob",
+     "recruteur": "ADB_RemiWanKenobi",
+     "points": 16,
+     "bonus_step": 3
+    },
+    {
+     "recrue": "ThibLaFrite",
+     "recruteur": "ADB_RemiWanKenobi",
+     "points": 12,
+     "bonus_step": null
+    }
+   ],
+   "top": [
+    {
+     "joueur": "Bazouzou",
+     "total": 66
+    },
+    {
+     "joueur": "ADB_RemiWanKenobi",
+     "total": 65
+    },
+    {
+     "joueur": "ADB_Samyfit",
+     "total": 60
+    }
+   ]
+  }
+ },
+ {
+  "set": "set-7",
+  "shop": "sortileges-perpignan",
+  "data": {
+   "steps": [
+    {
+     "step": 3,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Valens26",
+       "victoires": 4,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "alnef",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "PandaKen0b1",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Gamerslash66",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Scial",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ZaZ333",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "desert5eagull",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Nwarht",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "jwpnb",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 4,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "ZaZ333",
+       "victoires": 5,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Gamerslash66",
+       "victoires": 4,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Scial",
+       "victoires": 2,
+       "defaites": 4,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "desert5eagull",
+       "victoires": 1,
+       "defaites": 5,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 5,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Gamerslash66",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "desert5eagull",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Pjrbs",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "ZaZ333",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Scial",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "PandaKen0b1",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    }
+   ],
+   "recruitments": [
+    [
+     "desert5eagull",
+     "ZaZ333"
+    ]
+   ],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [
+     3,
+     4,
+     5
+    ],
+    "snapshots": {
+     "3": {
+      "rows": [
+       {
+        "joueur": "Gamerslash66",
+        "rank": 1,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "PandaKen0b1",
+        "rank": 2,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Valens26",
+        "rank": 3,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "alnef",
+        "rank": 4,
+        "total": 11,
+        "diff": 11,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Scial",
+        "rank": 5,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 9
+        }
+       },
+       {
+        "joueur": "ZaZ333",
+        "rank": 6,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Nwarht",
+        "rank": 7,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       },
+       {
+        "joueur": "desert5eagull",
+        "rank": 8,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       },
+       {
+        "joueur": "jwpnb",
+        "rank": 9,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 36,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Valens26",
+         "v": 4,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Gamerslash66",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "PandaKen0b1",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "alnef",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Scial",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "ZaZ333",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Nwarht",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "desert5eagull",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "jwpnb",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "4": {
+      "rows": [
+       {
+        "joueur": "Gamerslash66",
+        "rank": 1,
+        "total": 22,
+        "diff": 11,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 11,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "ZaZ333",
+        "rank": 2,
+        "total": 20,
+        "diff": 11,
+        "etapes": 2,
+        "move": "up",
+        "delta": 4,
+        "par_etape": {
+         "3": 9,
+         "4": 11
+        }
+       },
+       {
+        "joueur": "Scial",
+        "rank": 3,
+        "total": 18,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 2,
+        "par_etape": {
+         "3": 9,
+         "4": 9
+        }
+       },
+       {
+        "joueur": "desert5eagull",
+        "rank": 4,
+        "total": 14,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 4,
+        "par_etape": {
+         "3": 7,
+         "4": 7
+        }
+       },
+       {
+        "joueur": "PandaKen0b1",
+        "rank": 5,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Valens26",
+        "rank": 6,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "alnef",
+        "rank": 7,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 3,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Nwarht",
+        "rank": 8,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "3": 7
+        }
+       },
+       {
+        "joueur": "jwpnb",
+        "rank": 9,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 24,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ZaZ333",
+         "v": 5,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Gamerslash66",
+         "v": 4,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Scial",
+         "v": 2,
+         "d": 4,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "desert5eagull",
+         "v": 1,
+         "d": 5,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "5": {
+      "rows": [
+       {
+        "joueur": "Gamerslash66",
+        "rank": 1,
+        "total": 33,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 11,
+         "4": 11,
+         "5": 11
+        }
+       },
+       {
+        "joueur": "ZaZ333",
+        "rank": 2,
+        "total": 32,
+        "diff": 12,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 9,
+         "4": 11,
+         "5": 12
+        }
+       },
+       {
+        "joueur": "Scial",
+        "rank": 3,
+        "total": 25,
+        "diff": 7,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 9,
+         "4": 9,
+         "5": 7
+        }
+       },
+       {
+        "joueur": "desert5eagull",
+        "rank": 4,
+        "total": 23,
+        "diff": 9,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 7,
+         "4": 7,
+         "5": 9
+        }
+       },
+       {
+        "joueur": "PandaKen0b1",
+        "rank": 5,
+        "total": 16,
+        "diff": 5,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 11,
+         "5": 5
+        }
+       },
+       {
+        "joueur": "Valens26",
+        "rank": 6,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "alnef",
+        "rank": 7,
+        "total": 11,
+        "diff": 0,
+        "etapes": 1,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Pjrbs",
+        "rank": 8,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "5": 9
+        }
+       },
+       {
+        "joueur": "Nwarht",
+        "rank": 9,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "3": 7
+        }
+       },
+       {
+        "joueur": "jwpnb",
+        "rank": 10,
+        "total": 7,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "3": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 18,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "ZaZ333",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 5,
+         "total": 12
+        },
+        {
+         "joueur": "Gamerslash66",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Pjrbs",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "desert5eagull",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Scial",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "PandaKen0b1",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     }
+    },
+    "colors": {
+     "alnef": "#0984e3",
+     "desert5eagull": "#3498db",
+     "Gamerslash66": "#74b9ff",
+     "jwpnb": "#0984e3",
+     "Nwarht": "#1abc9c",
+     "PandaKen0b1": "#55efc4",
+     "Pjrbs": "#55efc4",
+     "Scial": "#9b59b6",
+     "Valens26": "#b2bec3",
+     "ZaZ333": "#74b9ff"
+    }
+   },
+   "recruitments": [
+    {
+     "recrue": "desert5eagull",
+     "recruteur": "ZaZ333",
+     "points": 23,
+     "bonus_step": 5
+    }
+   ],
+   "top": [
+    {
+     "joueur": "Gamerslash66",
+     "total": 33
+    },
+    {
+     "joueur": "ZaZ333",
+     "total": 32
+    },
+    {
+     "joueur": "Scial",
+     "total": 25
+    }
+   ]
+  }
+ },
+ {
+  "set": "set-7",
+  "shop": "test",
+  "data": {
+   "steps": [
+    {
+     "step": 1,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Alpha",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 1
+      },
+      {
+       "joueur": "Bravo",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Charlie",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Delta",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 2,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Charlie",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 1
+      },
+      {
+       "joueur": "Bravo",
+       "victoires": 3,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Echo",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Alpha",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Golf",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Delta",
+       "victoires": 1,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Foxtrot",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Hotel",
+       "victoires": 2,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      }
+     ]
+    },
+    {
+     "step": 3,
+     "forfait": false,
+     "source": null,
+     "results": [
+      {
+       "joueur": "Charlie",
+       "victoires": 3,
+       "defaites": 0,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Golf",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Alpha",
+       "victoires": 2,
+       "defaites": 1,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Bravo",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "Echo",
+       "victoires": 1,
+       "defaites": 2,
+       "nuls": 0,
+       "recrutement": 0
+      },
+      {
+       "joueur": "India",
+       "victoires": 0,
+       "defaites": 3,
+       "nuls": 0,
+       "recrutement": 1
+      }
+     ]
+    }
+   ],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [
+     1,
+     2,
+     3
+    ],
+    "snapshots": {
+     "1": {
+      "rows": [
+       {
+        "joueur": "Alpha",
+        "rank": 1,
+        "total": 16,
+        "diff": 16,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 16
+        }
+       },
+       {
+        "joueur": "Bravo",
+        "rank": 2,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 9
+        }
+       },
+       {
+        "joueur": "Charlie",
+        "rank": 3,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 7
+        }
+       },
+       {
+        "joueur": "Delta",
+        "rank": 4,
+        "total": 5,
+        "diff": 5,
+        "etapes": 1,
+        "move": null,
+        "delta": 0,
+        "par_etape": {
+         "1": 5
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 12,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Alpha",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Bravo",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Charlie",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Delta",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     },
+     "2": {
+      "rows": [
+       {
+        "joueur": "Alpha",
+        "rank": 1,
+        "total": 25,
+        "diff": 9,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 16,
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Charlie",
+        "rank": 2,
+        "total": 23,
+        "diff": 16,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "1": 7,
+         "2": 16
+        }
+       },
+       {
+        "joueur": "Bravo",
+        "rank": 3,
+        "total": 20,
+        "diff": 11,
+        "etapes": 2,
+        "move": "down",
+        "delta": 1,
+        "par_etape": {
+         "1": 9,
+         "2": 11
+        }
+       },
+       {
+        "joueur": "Delta",
+        "rank": 4,
+        "total": 12,
+        "diff": 7,
+        "etapes": 2,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 5,
+         "2": 7
+        }
+       },
+       {
+        "joueur": "Echo",
+        "rank": 5,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Foxtrot",
+        "rank": 6,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Hotel",
+        "rank": 7,
+        "total": 9,
+        "diff": 9,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Golf",
+        "rank": 8,
+        "total": 7,
+        "diff": 7,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "2": 7
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 32,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Bravo",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Charlie",
+         "v": 3,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Alpha",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Echo",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Foxtrot",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Hotel",
+         "v": 2,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Delta",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Golf",
+         "v": 1,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        }
+       ]
+      }
+     },
+     "3": {
+      "rows": [
+       {
+        "joueur": "Alpha",
+        "rank": 1,
+        "total": 34,
+        "diff": 9,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 16,
+         "2": 9,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Charlie",
+        "rank": 2,
+        "total": 34,
+        "diff": 11,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 7,
+         "2": 16,
+         "3": 11
+        }
+       },
+       {
+        "joueur": "Bravo",
+        "rank": 3,
+        "total": 27,
+        "diff": 7,
+        "etapes": 3,
+        "move": "same",
+        "delta": 0,
+        "par_etape": {
+         "1": 9,
+         "2": 11,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Echo",
+        "rank": 4,
+        "total": 16,
+        "diff": 7,
+        "etapes": 2,
+        "move": "up",
+        "delta": 1,
+        "par_etape": {
+         "2": 9,
+         "3": 7
+        }
+       },
+       {
+        "joueur": "Golf",
+        "rank": 5,
+        "total": 16,
+        "diff": 9,
+        "etapes": 2,
+        "move": "up",
+        "delta": 3,
+        "par_etape": {
+         "2": 7,
+         "3": 9
+        }
+       },
+       {
+        "joueur": "Delta",
+        "rank": 6,
+        "total": 12,
+        "diff": 0,
+        "etapes": 2,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "1": 5,
+         "2": 7
+        }
+       },
+       {
+        "joueur": "India",
+        "rank": 7,
+        "total": 10,
+        "diff": 10,
+        "etapes": 1,
+        "move": "new",
+        "delta": 0,
+        "par_etape": {
+         "3": 10
+        }
+       },
+       {
+        "joueur": "Foxtrot",
+        "rank": 8,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "2": 9
+        }
+       },
+       {
+        "joueur": "Hotel",
+        "rank": 9,
+        "total": 9,
+        "diff": 0,
+        "etapes": 1,
+        "move": "down",
+        "delta": 2,
+        "par_etape": {
+         "2": 9
+        }
+       }
+      ],
+      "detail": {
+       "forfait": false,
+       "parties": 18,
+       "source": null,
+       "rows": [
+        {
+         "joueur": "Charlie",
+         "v": 3,
+         "d": 0,
+         "n": 0,
+         "participation": 2,
+         "victoires": 6,
+         "parties": 3,
+         "bonus": 0,
+         "total": 11
+        },
+        {
+         "joueur": "Alpha",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Golf",
+         "v": 2,
+         "d": 1,
+         "n": 0,
+         "participation": 2,
+         "victoires": 4,
+         "parties": 3,
+         "bonus": 0,
+         "total": 9
+        },
+        {
+         "joueur": "Bravo",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "Echo",
+         "v": 1,
+         "d": 2,
+         "n": 0,
+         "participation": 2,
+         "victoires": 2,
+         "parties": 3,
+         "bonus": 0,
+         "total": 7
+        },
+        {
+         "joueur": "India",
+         "v": 0,
+         "d": 3,
+         "n": 0,
+         "participation": 2,
+         "victoires": 0,
+         "parties": 3,
+         "bonus": 0,
+         "total": 5
+        }
+       ]
+      }
+     }
+    },
+    "colors": {
+     "Alpha": "#f39c12",
+     "Bravo": "#f39c12",
+     "Charlie": "#74b9ff",
+     "Delta": "#1abc9c",
+     "Echo": "#2ecc71",
+     "Foxtrot": "#a29bfe",
+     "Golf": "#fd79a8",
+     "Hotel": "#e74c3c",
+     "India": "#e67e22"
+    }
+   },
+   "recruitments": [],
+   "top": [
+    {
+     "joueur": "Alpha",
+     "total": 34
+    },
+    {
+     "joueur": "Charlie",
+     "total": 34
+    },
+    {
+     "joueur": "Bravo",
+     "total": 27
+    }
+   ]
+  }
+ },
+ {
+  "set": "set-9",
+  "shop": "all4play",
+  "data": {
+   "steps": [],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [],
+    "snapshots": {},
+    "colors": {}
+   },
+   "recruitments": [],
+   "top": []
+  }
+ },
+ {
+  "set": "set-9",
+  "shop": "cercle-du-jeu",
+  "data": {
+   "steps": [],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [],
+    "snapshots": {},
+    "colors": {}
+   },
+   "recruitments": [],
+   "top": []
+  }
+ },
+ {
+  "set": "set-9",
+  "shop": "sortileges-perpignan",
+  "data": {
+   "steps": [],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [],
+    "snapshots": {},
+    "colors": {}
+   },
+   "recruitments": [],
+   "top": []
+  }
+ },
+ {
+  "set": "set-9",
+  "shop": "test",
+  "data": {
+   "steps": [],
+   "recruitments": [],
+   "aliases": {
+    "Dracos": "ADB_Dracos",
+    "Eivro": "ADB_Eivro"
+   }
+  },
+  "expected": {
+   "season": {
+    "numSteps": 10,
+    "steps": [],
+    "snapshots": {},
+    "colors": {}
+   },
+   "recruitments": [],
+   "top": []
+  }
+ }
+]
