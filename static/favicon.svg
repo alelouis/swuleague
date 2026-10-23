@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>SWU league</title>
+  <!-- podium : 2e, 1er, 3e -->
+  <rect x="4" y="32" width="16" height="26" rx="4" fill="#94a3b8"/>
+  <rect x="24" y="22" width="16" height="36" rx="4" fill="#38bdf8"/>
+  <rect x="44" y="38" width="16" height="20" rx="4" fill="#fb923c"/>
+  <path d="M32 2 L34.6 7.4 L40.5 8.2 L36.2 12.3 L37.3 18.2 L32 15.4 L26.7 18.2 L27.8 12.3 L23.5 8.2 L29.4 7.4 Z" fill="#fcd34d"/>
+</svg>
